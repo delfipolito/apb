@@ -72,6 +72,9 @@
     width: calc(100% - 20px);
     margin-left: 10px;
 	}
+	.contact-p {
+    margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 991px) { /*Para monitores sm y xs*/
