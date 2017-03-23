@@ -1,0 +1,248 @@
+/*FONTS*/
+@font-face {
+ font-family: 'arroba';
+ src: url('../fonts/OpenSans-Bold.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'ciudad';
+ src: url('../fonts/Raleway-Bold.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'enter';
+ src: url('../fonts/FiraSansCondensed-Regular.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'firaThin';
+ src: url('../fonts/FiraSansCondensed-Thin.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'titulos';
+ src: url('../fonts/OldStandard-Regular.ttf') format('opentype');
+}
+
+
+/*GENERAL*/
+
+html, body, section {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+section{
+  position: relative;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.only-mobile {
+  display: none;
+}
+
+.only-large {
+  display: inherit;
+}
+
+/*COVER*/
+
+#home{
+  background-image: url('../images/cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: white;
+  height: 100%;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+#border{
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  margin: auto;
+  margin-top: 20px;
+  border: solid 2px;
+  border-color: transparent;
+  text-align: center;
+}
+
+.enter-button {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 80px;
+  border: solid 0px transparent;
+  background: transparent;
+  color: transparent;
+  font-size: 26px;
+  width: 100px;
+  align-self: center;
+  right: calc(50% - 50px);
+  font-family: 'enter';
+  letter-spacing: 2px;
+}
+/*WHO*/
+#who {
+  background-color: #f9f9f9;
+  height: 115%!important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*ABOUT*/
+#about {
+  margin: -100px 0 40px 0;
+}
+.about-text-container {
+  padding: 20px 30px;
+  margin-top: 100px;
+}
+.about-text {
+  font-family: 'titulos';
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.about-mobile {
+  display: none;
+}
+.about-large {
+  display: inherit;
+}
+
+/*PROJECT*/
+.our-project-section {
+  background-color: #f9f9f9;
+  height: 115%;
+  padding-top: 30px;
+  padding-bottom: 130px;
+}
+
+.project-explanation {
+  font-family: 'firaThin';
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 2px;
+}
+
+.map-image {
+  width: 100%;
+}
+
+/*CONTACT*/
+.contact-section {
+  height: 115%;
+  margin-top: -100px;
+  background-color: transparent;
+}
+#map {
+  height: 420px;
+  width: 520px;
+}
+
+.outer-contact {
+  width: 480px;
+  height: 725px;
+  margin-left: calc(40% - 430px);
+  text-align: center;
+  position: absolute;
+  background-image: url('../images/WindermereIsland.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: white;
+}
+.inner-contact {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-top: 40px;
+  margin-left: 40px;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  font-family: 'firaThin';
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.right-side {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 650px;
+  margin-top: 150px;
+}
+.contact-logo {
+  margin-top: 73px;
+  margin-bottom: 30px;
+}
+.contact-p {
+  margin-bottom: 30px;
+}
+.contact-title {
+  font-size: 60px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  font-family: 'titulos';
+  letter-spacing: 4px;
+}
+
+/*NAVBAR*/
+
+.navbar-toggle {
+  float: left!important;
+  margin-left: 15px!important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-center {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+}
+
+
+/*REPETITIVE*/
+.line {
+  width: 81px;
+  line-height: 3.3em;
+  font-size: 0.3125em;
+  display: block;
+  letter-spacing: 0.2em;
+  border-top: 1px solid #000;
+  vertical-align: top;
+}
+
+.title {
+  font-size: 60px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  font-family: 'titulos';
+  letter-spacing: 4px;
+}
+
+.top-text {
+  margin: 0px;
+  font-family: 'firaThin';
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
