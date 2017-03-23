@@ -78,6 +78,9 @@
 }
 
 @media (max-width: 991px) { /*Para monitores sm y xs*/
+	#border{
+  	border-color: transparent;
+	}
 	.about-mobile {
 		display: inherit;
 	}
