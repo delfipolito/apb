@@ -90,6 +90,9 @@
 	#about {
     margin: 40px 0 40px 0;
 	}
+  #studio {
+    margin: 40px 0 40px 0;
+  }
 	html, body, section {overflow-x: hidden;}
 	.title {font-size: 40px;}
 	.about-text{padding: 0 20px;}
