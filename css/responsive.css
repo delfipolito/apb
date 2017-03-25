@@ -1,6 +1,13 @@
 /*MEDIA SIZE*/
 
-
+@media (min-width: 1200px){
+  .container {
+    width: 1098px!important;
+  }
+  .about-text-container {
+    padding: 0 48px!important;
+  }
+}
 
 @media (max-width: 767px) { /*Para monitores xs*/
 	#border{
