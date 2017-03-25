@@ -33,7 +33,9 @@ section{
   position: relative;
 
 }
-
+.relative {
+  position: relative;
+}
 .hidden {
   display: none;
 }
@@ -269,10 +271,69 @@ section{
 
 /*PEOPLE*/
 #people {
-  height: 500px;
+  height: 2050px;
   background-color: #f9f9f9;
 }
-
+.name {
+  font-size: 42px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'titulos';
+  letter-spacing: 4px;
+}
+.profession {
+  margin: 0px;
+  font-family: 'firaThin';
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.profession-margin {
+  margin-left: 63px;
+}
+.patricio-text {
+  top: 129px;
+  z-index: 4;
+  position: absolute;
+  left: calc(50% - 329px);
+}
+.patricio-photo {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 350px);
+}
+.natalia-text {
+  position: absolute;
+  top: 609px;
+  right: calc(50% - 375px);
+}
+.natalia-photo {
+  position: absolute;
+  top: 495px;
+  left: calc(50% - 405px);
+}
+.mariana-text {
+  position: absolute;
+  top: 1045px;
+  text-align: right;
+  z-index: 5;
+  left: calc(50% - 465px);
+}
+.mariana-photo {
+  position: absolute;
+  top: 942px;
+  right: calc(50% - 482px);
+}
+.sofia-text {
+  position: absolute;
+  top: 1527px;
+  right: calc(50% - 395px);
+}
+.sofia-photo {
+  position: absolute;
+  top: 1351px;
+  left: calc(50% - 301px);
+}
 /*WORK*/
 #work {
   height: 500px;
