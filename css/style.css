@@ -47,7 +47,67 @@ section{
 .only-large {
   display: inherit;
 }
+.no-padding {
+  padding: 0px!important;
+}
 
+/*NAVBAR*/
+.navbar {
+  position: relative;
+  height: 100px;
+  border-top: solid 0px transparent!important;
+  border-right: solid 0px transparent!important;
+  border-left: solid 0px transparent!important;
+  border-bottom: solid 1.5px black!important;
+  background: white!important;
+}
+.container-fluid {
+  margin-top: 30px;
+}
+.navbar-brand {
+  position: absolute;
+  left: calc(50% - 12.5px);
+  width: 50px;
+  text-align: center;
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+  float: none;
+}
+.navbar-left {
+  width: calc(50% - 25px);
+}
+.navbar-right {
+  width: calc(50% - 25px);
+}
+.links-nav-right {
+  width: 310px;
+}
+.links-nav-left {
+  width: 310px;
+  float: right!important;
+}
+.instagram {
+  float: right!important;
+  width: 50px;
+}
+@media (min-width: 1045px) and (max-width: 1340px) {
+  .links-nav-right {
+    width: 200px;
+  }
+  .links-nav-left {
+    width: 200px;
+    float: right!important;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1045px) {
+  .links-nav-right {
+    width: 100px;
+  }
+  .links-nav-left {
+    width: 100px;
+  }
+}
 /*COVER*/
 
 #home{
