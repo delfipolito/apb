@@ -60,17 +60,22 @@ section{
   border-left: solid 0px transparent!important;
   border-bottom: solid 1.5px black!important;
   background: white!important;
+  font-family: 'tituulos';
+  color: black;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 500;
 }
 .container-fluid {
   margin-top: 30px;
 }
 .navbar-brand {
   position: absolute;
-  left: calc(50% - 12.5px);
-  width: 50px;
+  left: calc(50% - 50.5px);
+  width: 133px;
+  top: 17px!important;
   text-align: center;
-  padding-right: 0px!important;
-  padding-left: 0px!important;
+  padding: 0px!important;
   float: none;
 }
 @media (min-width: 768px) {
@@ -88,8 +93,10 @@ section{
     float: right!important;
   }
   .instagram {
-    float: right!important;
     width: 50px;
+    position: absolute;
+    right: 21px;
+    bottom: 10px;
   }
 }
 
