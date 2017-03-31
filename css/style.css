@@ -19,7 +19,14 @@
  font-family: 'titulos';
  src: url('../fonts/OldStandard-Regular.ttf') format('opentype');
 }
-
+@font-face {
+ font-family: 'quotes';
+ src: url('../fonts/OldStandard-Italic.ttf') format('opentype');
+}
+@font-face {
+ font-family: 'comillas';
+ src: url('../fonts/PlayfairDisplay-Regular.ttf') format('opentype');
+}
 
 /*GENERAL*/
 
@@ -406,7 +413,255 @@ section{
   left: calc(50% - 301px);
 }
 /*WORK*/
-#work {
-  height: 500px;
+.work-sections {
+  height: 1000px;
   background-color: white;
+}
+.work-title {
+  font-size: 55px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'titulos';
+  letter-spacing: 4px;
+  z-index: 3;
+}
+.date {
+  margin: 0px;
+  font-family: 'firaThin';
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.location {
+  margin: 0px;
+  font-family: 'firaThin';
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.quote-title {
+  font-family: 'quotes';
+  font-size: 13.5px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: justify;
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 3;
+}
+.work-sections {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.comillas {
+  font-family: 'comillas';
+  font-size: 40px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: justify;
+  margin-bottom: 20px;
+  position: absolute;
+}
+.work-img {
+  max-width: 50%;
+}
+
+/*MALLORCA*/
+#mallorca {
+  margin-top: 201px;
+  height: 1000px;
+}
+
+.mallorca-quote {
+  position: absolute;
+  top: 771px;
+  width: 46%;
+  right: 40px;
+}
+.mallorca-img-1 {
+  width: 45%;
+  position: absolute;
+  top: 361px;
+  left: 0;
+}
+.mallorca-img-2 {
+  width: 46%;
+  position: absolute;
+  top: 1px;
+  right: 40px;
+}
+
+/*CAESAREA*/
+#caesaria {
+  height: 1050px;
+}
+
+.caesarea-quote {
+  position: absolute;
+  top: 857px;
+  left: 0;
+  width: 44%;
+  margin-left: 3%;
+}
+
+.caesarea-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+.caesarea-item img {
+  width: 100%;
+  -moz-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.caesarea-item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+.caesarea-img-2 {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  top: 350px;
+}
+.caesarea-work-title {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 45%;
+}
+
+/*ASPEN 1*/
+.aspen1-img-1 {
+  position: absolute;
+  left: 0;
+  width: 45%;
+  top: 328px;
+}
+.aspen1-img-2 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 50%;
+}
+.aspen1-quote {
+  position: absolute;
+  top: 739px;
+  width: 50%;
+  right: 0;
+}
+
+/*ASPEN CONDO*/
+.aspen-condo-title {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 45%;
+}
+.aspen-condo-img-1 {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+.aspen-condo-img-2 {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  top: 295px;
+}
+
+/*BEBERLY HILLS*/
+.bhills-img-1 {
+  position: absolute;
+  left: 0;
+  width: 45%;
+  top: 328px;
+}
+.bhills-img-2 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 50%;
+}
+
+/*ASPEN 2*/
+.aspen2-title {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 45%;
+}
+.aspen2-img-1 {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+.aspen2-img-2 {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  top: 395px;
+}
+.aspen2-quote {
+  position: absolute;
+  top: 739px;
+  width: 50%;
+  left: 0;
+}
+
+/*BS. AS. 1*/
+.bsas-img-1 {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  top: 300px;
+}
+.bsas-img-2 {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 55%;
+}
+
+/*BEL AIR*/
+#belAir {
+  height: 1100px;
+}
+.belair-item {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  top: 350px;
+  overflow: hidden;
+}
+.belair-item img {
+  width: 100%;
+  -moz-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.belair-item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+.belair-img-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+.belair-work-title {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 45%;
 }

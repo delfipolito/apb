@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 991px) { /*Para monitores sm y xs*/
+  .mallorca-quote {
+    width: 90%;
+    left: 5%;
+  }
 	#border{
   	border-color: transparent;
 	}
