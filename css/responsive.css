@@ -85,10 +85,49 @@
 }
 
 @media (max-width: 991px) { /*Para monitores sm y xs*/
+  .quote-title {
+    width: 90%;
+  }
+  .work-title-container {
+    top:0;
+    width: 45%;
+  }
+  .mallorca-work-title {
+    left: 0;
+  }
   .mallorca-quote {
     width: 90%;
     left: 5%;
+    top: 689px;
   }
+  #mallorca {height: 821px;}
+  .mallorca-img-1 {top: 245px;}
+  #caesaria {height: 900px;}
+  .caesarea-img-2 {top: 250px;}
+  .caesarea-quote {top: 768px;}
+  #aspen1 { height: 800px;}
+  .aspen1-work-title{
+    width: 45%;
+    left: 0;
+    top: 0;
+  }
+  .aspen1-img-1 {top: 228px;}
+  .aspen1-quote {top: 676px;}
+  #aspenCondo {height: 675px;}
+  .aspen-condo-img-2 {top: 235px;}
+  #beberlyHills {height: 865px;}
+  .bhills-img-2 {top: 148px;}
+  .bhills-img-1 {top: 257px;}
+  .bhills-work-title {
+    width: 100%;
+    left: 0;
+  }
+  #aspen2 {height: 750px;}
+  .aspen2-margin {margin-left: 35px;}
+  .aspen2-title {right: 0%;}
+  .aspen2-img-2 {top: 250px;}
+  .aspen2-quote {top: 589px;}
+
 	#border{
   	border-color: transparent;
 	}

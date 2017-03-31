@@ -417,6 +417,9 @@ section{
   height: 1000px;
   background-color: white;
 }
+.work-title-container {
+  z-index: 5;
+}
 .work-title {
   font-size: 55px;
   margin-top: 3px;
@@ -471,7 +474,14 @@ section{
   margin-top: 201px;
   height: 1000px;
 }
-
+.mallorca-work-title {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.mallorca-name {
+  margin-left: 25px;
+}
 .mallorca-quote {
   position: absolute;
   top: 771px;
@@ -527,16 +537,28 @@ section{
   position: absolute;
   right: 0;
   width: 45%;
-  top: 350px;
+  top: 330px;
 }
 .caesarea-work-title {
   position: absolute;
-  top: 100px;
+  top: 20px;
   right: 0;
   width: 45%;
 }
 
+.caesarea-margin {
+  margin-left: 50px;
+}
+
 /*ASPEN 1*/
+.aspen1-margin {
+  margin-left: 40px;
+}
+.aspen1-work-title {
+  position: absolute;
+  top: 50px;
+  left: 17%;
+}
 .aspen1-img-1 {
   position: absolute;
   left: 0;
@@ -577,6 +599,11 @@ section{
 }
 
 /*BEBERLY HILLS*/
+.bhills-work-title {
+  position: absolute;
+  top: 33px;
+  left: 15%;
+}
 .bhills-img-1 {
   position: absolute;
   left: 0;
@@ -593,9 +620,8 @@ section{
 /*ASPEN 2*/
 .aspen2-title {
   position: absolute;
-  top: 50px;
-  right: 0;
-  width: 45%;
+  top: 88px;
+  right: 7%;
 }
 .aspen2-img-1 {
   position: absolute;
@@ -615,19 +641,30 @@ section{
   width: 50%;
   left: 0;
 }
+.aspen2-margin {
+  margin-left: 150px;
+}
 
 /*BS. AS. 1*/
 .bsas-img-1 {
   position: absolute;
   left: 0;
   width: 40%;
-  top: 300px;
+  top: 382px;
 }
 .bsas-img-2 {
   top: 0;
   right: 0;
   position: absolute;
   width: 55%;
+}
+.bsas-title {
+  position: absolute;
+  top: 148px;
+  left: 101px;
+}
+.bsas-margin {
+  margin-left: 72px;
 }
 
 /*BEL AIR*/
