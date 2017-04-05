@@ -8,8 +8,122 @@
     padding: 0 48px!important;
   }
 }
+@media (min-width: 350px) and (max-width: 767px) { /*Para iphone 6*/
+  .mallorca-img-2 {top: 1px;}
+  .work-title {font-size: 30px;}
+  #beberlyHills {height: 545px;}
+}
+@media (max-width: 350px) { /*Para iphone 5*/
+  .mallorca-img-2 {top: 18px;}
+  .work-title {font-size: 26px;}
+  #beberlyHills {height: 450px;}
+}
+
 
 @media (max-width: 767px) { /*Para monitores xs*/
+  .container {
+    width: 90%;
+    margin: 5%;
+  }
+  .work-sections {
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    padding-bottom: 30px;
+  }
+  
+  .location {font-size: 14px;}
+  .date {font-size: 14px;}
+  .quote-title {width: 90%;}
+  .work-title-container {
+    top:0;
+    width: 45%;
+  }
+  .mallorca-name {
+    margin-left: 0;
+  }
+  .mallorca-work-title {
+    left: 0;
+  }
+  .mallorca-quote {
+    width: 90%;
+    left: 5%;
+    top: 389px;
+  }
+  #mallorca {
+    height: 700px;
+    margin-top: 100px!important;
+    padding-top: 30px;
+  }
+  .mallorca-img-1 {top: 175px;}
+  .mallorca-img-2 {
+    width: 50%;
+    position: absolute;
+    right: 0px;
+  }
+  #caesaria {height: 650px;}
+  .caesarea-img-2 {top: 178px;}
+  .caesarea-quote {top: 410px;}
+  .caesarea-work-title {width: 57%;}
+  #aspen1 { height: 650px;}
+  .aspen1-work-title{
+    width: 51%;
+    left: 0;
+    top: 0;
+  }
+  .aspen1-img-1 {top: 160px;}
+  .aspen1-quote {
+    top: 376px;
+    right: initial;
+  }
+  .aspen1-margin {
+    margin-left: 30px;
+  }
+  .aspen-condo-margin {
+    margin-left: 0px;
+  }
+  #aspenCondo {height: 375px;}
+  .aspen-condo-img-2 {top: 165px;}
+  .bhills-img-2 {top: 148px;}
+  .bhills-img-1 {top: 200px;}
+  .bhills-work-title {
+    width: 100%;
+    left: 0;
+  }
+  #aspen2 {height: 720px;}
+  .aspen2-margin {margin-left: 0px;}
+  .aspen2-title {
+    right: 0%;
+    width: 52%;
+  }
+  .aspen2-img-1 {width: 46%;}
+  .aspen2-img-2 {
+    top: 190px;
+    width: 51%;
+  }
+  .aspen2-quote {
+    top: 389px;
+    left: inherit;
+  }
+  #buenosAires{height: 450px;}
+  .bsas-title {
+    width: 90%;
+    margin: auto;
+    left: inherit;
+  }
+  .bsas-img-2 {top: 160px;}
+  .bsas-img-1 {top: 202px;}
+  .bsas-margin {margin-left: 0px;}
+  #belAir {
+    height: 500px;
+  }
+  #belAir p.location {font-size: 12px!important;}
+  .belair-work-title {width: 50%;}
+  .belair-img-1 {width: 48%;}
+  .belair-item {
+    top: 170px;
+    width: 47%;
+  }
+
 	#border{
 		height: calc(100% - 60px);
 		border: solid 3px;
@@ -85,6 +199,38 @@
 }
 
 @media (max-width: 991px) { /*Para monitores sm y xs*/
+  #border{
+  	border-color: transparent;
+	}
+	.about-mobile {
+		display: inherit;
+	}
+	.about-large {
+		display: none;
+	}
+	#about {
+    margin: 40px 0 40px 0;
+	}
+  #studio {
+    margin: 40px 0 40px 0;
+  }
+	html, body, section {overflow-x: hidden;}
+	.title {font-size: 40px;}
+	.about-text{padding: 0 20px;}
+	.only-mobile {display: inherit;}
+	.only-large {display: none;}
+	.map-image {
+  	width: auto;
+  	height: 400px;
+  }
+  .navbar-collapse {
+    background-color: white;
+  }
+  .navbar-header {height: 70px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
+  .belair-item {top: 257px;}
   .quote-title {
     width: 90%;
   }
@@ -127,38 +273,9 @@
   .aspen2-title {right: 0%;}
   .aspen2-img-2 {top: 250px;}
   .aspen2-quote {top: 589px;}
-
-	#border{
-  	border-color: transparent;
-	}
-	.about-mobile {
-		display: inherit;
-	}
-	.about-large {
-		display: none;
-	}
-	#about {
-    margin: 40px 0 40px 0;
-	}
-  #studio {
-    margin: 40px 0 40px 0;
+  #belAir {
+    height: 800px;
   }
-	html, body, section {overflow-x: hidden;}
-	.title {font-size: 40px;}
-	.about-text{padding: 0 20px;}
-	.only-mobile {display: inherit;}
-	.only-large {display: none;}
-	.map-image {
-  	width: auto;
-  	height: 400px;
-  }
-  .navbar-collapse {
-    background-color: white;
-  }
-  .navbar-header {height: 70px;}
-}
-
-@media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
 	.about-header-mobile {
 		position: absolute;
 		top: 0px;
@@ -221,7 +338,8 @@
 }
 @media (min-width: 992px) and (max-width: 1200px){ /*Para monitores md*/
 	.container {
-		width: 100%!important
+		width: 95%!important;
+    margin: auto;
 	}
 	.about-mobile {
 		display: none;
@@ -229,6 +347,18 @@
 	.about-large {
 		display: inherit;
 	}
+  .work-sections {height: 900px;}
+  .mallorca-img-2 {
+    width: 50%;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+  }
+  .aspen1-work-title {left: 123px;}
+  .aspen1-quote {top: 700px;}
+  .bhills-work-title {left: 100px;}
+  .aspen2-title {right: 2%;}
+  .bsas-title {left: 45px;}
 }
 
 @media (min-width: 1600px){ /*Para monitores de resolucion muy grande*/

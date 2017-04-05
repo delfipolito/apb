@@ -585,6 +585,9 @@ section{
   right: 0;
   width: 45%;
 }
+.aspen-condo-margin {
+  margin-left: 40px;
+}
 .aspen-condo-img-1 {
   position: absolute;
   width: 50%;
