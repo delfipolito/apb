@@ -952,6 +952,7 @@ area {
 .furniture-triangle {
   top: -150px;
   left: 521px;
+  padding: 20px 10px 10px 10px;
   background-image: url('../images/Etiquetas/furniture.png')!important;
 }
 .bsas-triangle {
