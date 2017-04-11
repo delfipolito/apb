@@ -777,7 +777,7 @@ area {
   width: 343px;
   z-index: 10;
   background-color: transparent;
-  background-image: url('../images/etiquetas/beige.png');
+  background-image: url('../images/Etiquetas/beige.png');
   top: -20px;
   left: 0px;
   bottom: auto;
@@ -862,7 +862,7 @@ area {
 .aspen1-triangle {
   top: -154px;
   left: -116px;
-  background-image: url('../images/etiquetas/aspenCondo.png')!important;
+  background-image: url('../images/Etiquetas/aspenCondo.png')!important;
   background-position: center;
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
@@ -873,7 +873,7 @@ area {
 .aspen2-triangle {
   top: -154px;
   left: -116px;
-  background-image: url('../images/etiquetas/aspen1.png')!important;
+  background-image: url('../images/Etiquetas/aspen1.png')!important;
   background-position: center;
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
@@ -883,7 +883,7 @@ area {
 .aspen3-triangle {
   top: -154px;
   left: -116px;
-  background-image: url('../images/etiquetas/aspen2.png')!important;
+  background-image: url('../images/Etiquetas/aspen2.png')!important;
   background-position: center;
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
@@ -895,7 +895,7 @@ area {
 .london1-triangle {
   top: -185px;
   left: 490px;
-  background-image: url('../images/etiquetas/london1.png')!important;
+  background-image: url('../images/Etiquetas/london1.png')!important;
   background-position: center;
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
@@ -906,7 +906,7 @@ area {
 .london2-triangle {
   top: -185px;
   left: 490px;
-  background-image: url('../images/etiquetas/london2.png')!important;
+  background-image: url('../images/Etiquetas/london2.png')!important;
   background-position: center;
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
@@ -916,7 +916,7 @@ area {
 .london3-triangle {
   top: -185px;
   left: 490px;
-  background-image: url('../images/etiquetas/london3.png')!important;
+  background-image: url('../images/Etiquetas/london3.png')!important;
   background-position: center;
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
@@ -934,43 +934,43 @@ area {
   left: -116px;
   padding: 0px;
   padding-top: 10px;
-  background-image: url('../images/etiquetas/aspen.png')!important;
+  background-image: url('../images/Etiquetas/aspen.png')!important;
 }
 
 .bahamas-tirangle {
   top: -104px;
   left: 290px;
   padding: 20px 10px 10px 10px;
-  background-image: url('../images/etiquetas/bahamas.png')!important;
+  background-image: url('../images/Etiquetas/bahamas.png')!important;
 }
 .london-triangle {
   top: -185px;
   left: 490px;
   padding: 10px;
-  background-image: url('../images/etiquetas/london.png')!important;
+  background-image: url('../images/Etiquetas/london.png')!important;
 }
 .furniture-triangle {
   top: -150px;
   left: 521px;
-  background-image: url('../images/etiquetas/furniture.png')!important;
+  background-image: url('../images/Etiquetas/furniture.png')!important;
 }
 .bsas-triangle {
   top: 372px;
   left: 371px;
-  background-image: url('../images/etiquetas/bsAs.png')!important;
+  background-image: url('../images/Etiquetas/bsAs.png')!important;
 }
 .sfernando-triangle {
   top: 332px;
   left: 20px;
-  background-image: url('../images/etiquetas/sanFernando.png')!important;
+  background-image: url('../images/Etiquetas/sanFernando.png')!important;
 }
 .caesarea-triangle {
-  background-image: url('../images/etiquetas/caesarea.png')!important;
+  background-image: url('../images/Etiquetas/caesarea.png')!important;
   top: 188px;
   left: 585px;
 }
 .mallorca-triangle {
-  background-image: url('../images/etiquetas/mallorca.png')!important;
+  background-image: url('../images/Etiquetas/mallorca.png')!important;
   top: -143px;
   left: 156px;
   padding: 20px 10px 10px 10px;
