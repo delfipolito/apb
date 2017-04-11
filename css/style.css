@@ -888,8 +888,7 @@ area {
   background-repeat: no-repeat;
   animation-timing-function: ease-in;
   z-index: 20;
-  height: 0px;    top: -154px;
-    left: -116px;
+  height: 0px;
 }
 
 .london1-triangle {

@@ -156,27 +156,27 @@ $( document ).ready(function(){
 	  // transitions
 	  $("#aspen-transition-1").click( function() {
 	  	$('.aspen1-triangle').removeClass('hidden');
-	  	$('.aspen1-triangle').animate({height: "285px"});
+	  	$('.aspen1-triangle').animate({height: "285px"}, "slow", "swing");
 	  });
 	  $("#aspen-transition-2").click( function() {
 	  	$('.aspen2-triangle').removeClass('hidden');
-	  	$('.aspen2-triangle').animate({height: "285px"});
+	  	$('.aspen2-triangle').animate({height: "285px"}, "slow", "swing");
 	  });
 	  $("#aspen-transition-3").click( function() {
 	  	$('.aspen3-triangle').removeClass('hidden');
-	  	$('.aspen3-triangle').animate({height: "285px"});
+	  	$('.aspen3-triangle').animate({height: "285px"}, "slow", "swing");
 	  });
 
 	  $("#london-transition-1").click( function() {
 	  	$('.london1-triangle').removeClass('hidden');
-	  	$('.london1-triangle').animate({height: "285px"});
+	  	$('.london1-triangle').animate({height: "285px"}, "slow", "swing");
 	  });
 	  $("#london-transition-2").click( function() {
 	  	$('.london2-triangle').removeClass('hidden');
-	  	$('.london2-triangle').animate({height: "285px"});
+	  	$('.london2-triangle').animate({height: "285px"}, "slow", "swing");
 	  });
 	  $("#london-transition-3").click( function() {
 	  	$('.london3-triangle').removeClass('hidden');
-	  	$('.london3-triangle').animate({height: "285px"});
+	  	$('.london3-triangle').animate({height: "285px"}, "slow", "swing");
 	  });
 })
