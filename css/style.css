@@ -35,6 +35,7 @@ html, body, section {
   width: 100%;
   margin: 0;
   padding: 0;
+  color: black;
 }
 section{
   position: relative;
@@ -57,8 +58,30 @@ section{
 .no-padding {
   padding: 0px!important;
 }
+.centered {
+  text-align: center;
+}
+.valign-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%!important;
+}
+.valign-wrapper .valign {
+  display: block;
+  text-align: center;
+}
 
 /*NAVBAR*/
+.hamburguer {
+  margin-left: 10px;
+  margin-top: -24px;
+}
 .navbar {
   position: relative;
   height: 100px;
@@ -72,6 +95,9 @@ section{
   letter-spacing: 3px;
   font-size: 12px;
   font-weight: 500;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent!important;
 }
 .container-fluid {
   margin-top: 30px;
@@ -214,7 +240,12 @@ section{
 }
 
 .map-image {
-  width: 100%;
+  width: auto;
+  height: auto;
+}
+
+area {
+  cursor: pointer;
 }
 
 /*CONTACT*/
@@ -427,6 +458,7 @@ section{
   font-family: 'titulos';
   letter-spacing: 4px;
   z-index: 3;
+  color: black;
 }
 .date {
   margin: 0px;
@@ -434,6 +466,7 @@ section{
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: black;
 }
 .location {
   margin: 0px;
@@ -441,6 +474,7 @@ section{
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: black;
 }
 .quote-title {
   font-family: 'quotes';
@@ -566,10 +600,22 @@ section{
   top: 328px;
 }
 .aspen1-img-2 {
+  position: absolute;
   top: 0;
   right: 0;
-  position: absolute;
   width: 50%;
+  overflow: hidden;
+}
+.aspen1-img-2 img {
+  width: 100%;
+  -moz-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.aspen1-img-2:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .aspen1-quote {
   position: absolute;
@@ -625,6 +671,24 @@ section{
   position: absolute;
   top: 88px;
   right: 7%;
+}
+.aspen2-img-1 {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.aspen2-img-1 img {
+  width: 100%;
+  -moz-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+.aspen2-img-1:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .aspen2-img-1 {
   position: absolute;
@@ -704,4 +768,222 @@ section{
   top: 100px;
   right: 0;
   width: 45%;
+}
+
+
+/*PROJECT*/
+.speech {
+  height: 283px;
+  width: 343px;
+  z-index: 10;
+  background-color: transparent;
+  background-image: url('../images/etiquetas/beige.png');
+  top: -20px;
+  left: 0px;
+  bottom: auto;
+  left: auto;
+  border-width: 20px 0px 0 20px;
+  border-color: transparent;
+  position:absolute;
+  margin:1em 0 3em;
+  color: black;
+  z-index: 10;
+  right: 0;
+  padding: 10px;
+  padding-top: 51px;
+}
+.fa-times-circle {
+  color: white;
+  cursor: pointer;
+}
+.triangle {
+  position:absolute;
+  margin:1em 0 3em;
+  color: #fff;
+  background: blue; 
+  height: 285px;
+  width: 400px;
+  z-index: 10;
+  right: 0;
+}
+.triangle.top:after {
+  top: -20px;
+  left: 0px;
+  bottom: auto;
+  left: auto;
+  border-width: 20px 0px 0 20px;
+  border-color: transparent blue;
+}
+.triangle:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  border-width: 20px 0 0 20px;
+  border-style: solid;
+  border-color: blue transparent;
+  display: block;
+  width: 0;
+}
+
+.triangle p {
+  padding:15px;
+}
+
+/*STYLE*/
+.tabs {
+  width: 100%;
+  cursor: pointer;
+}
+.middle-tab {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 74px!important;
+}
+.top-tab {
+  height: 64px!important;
+}
+.bottom-tab {
+  height: 74px!important;
+}
+.grey-close {
+  color: black;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.ba-bottom-tab {
+  border-top: 1px solid black;
+  height: 111px!important;
+}
+.ba-top-tab {
+  height: 101px!important;
+}
+.aspen1-triangle {
+  top: -154px;
+  left: -116px;
+  background-image: url('../images/etiquetas/aspenCondo.png')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+
+.aspen2-triangle {
+  top: -154px;
+  left: -116px;
+  background-image: url('../images/etiquetas/aspen1.png')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.aspen3-triangle {
+  top: -154px;
+  left: -116px;
+  background-image: url('../images/etiquetas/aspen2.png')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;    top: -154px;
+    left: -116px;
+}
+
+.london1-triangle {
+  top: -185px;
+  left: 490px;
+  background-image: url('../images/etiquetas/london1.png')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+
+.london2-triangle {
+  top: -185px;
+  left: 490px;
+  background-image: url('../images/etiquetas/london2.png')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.london3-triangle {
+  top: -185px;
+  left: 490px;
+  background-image: url('../images/etiquetas/london3.png')!important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+
+/*Cities*/
+.bhills-triangle {
+  top: 214px;
+  left: 232px;
+}
+.aspen-triangle {
+  top: -154px;
+  left: -116px;
+  padding: 0px;
+  padding-top: 10px;
+  background-image: url('../images/etiquetas/aspen.png')!important;
+}
+
+.bahamas-tirangle {
+  top: -104px;
+  left: 290px;
+  padding: 20px 10px 10px 10px;
+  background-image: url('../images/etiquetas/bahamas.png')!important;
+}
+.london-triangle {
+  top: -185px;
+  left: 490px;
+  padding: 10px;
+  background-image: url('../images/etiquetas/london.png')!important;
+}
+.furniture-triangle {
+  top: -150px;
+  left: 521px;
+  background-image: url('../images/etiquetas/furniture.png')!important;
+}
+.bsas-triangle {
+  top: 372px;
+  left: 371px;
+  background-image: url('../images/etiquetas/bsAs.png')!important;
+}
+.sfernando-triangle {
+  top: 332px;
+  left: 20px;
+  background-image: url('../images/etiquetas/sanFernando.png')!important;
+}
+.caesarea-triangle {
+  background-image: url('../images/etiquetas/caesarea.png')!important;
+  top: 188px;
+  left: 585px;
+}
+.mallorca-triangle {
+  background-image: url('../images/etiquetas/mallorca.png')!important;
+  top: -143px;
+  left: 156px;
+  padding: 20px 10px 10px 10px;
+}
+
+/*Fonts*/
+.beige-title {
+  font-family: 'titulos';
+  font-size: 16px;
+  margin: 0px;
+}
+.beige-subtitle {
+  font-family: 'firaThin';
+  font-size: 9px;
+  margin: 0px;
 }
