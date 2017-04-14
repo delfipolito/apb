@@ -243,6 +243,11 @@ section{
   width: auto;
   height: auto;
 }
+.map-container {
+  width: 850px;
+  height: 500px;
+  margin: auto;
+}
 
 area {
   cursor: pointer;
@@ -791,6 +796,7 @@ area {
   right: 0;
   padding: 10px;
   padding-top: 51px;
+  text-align: center;
 }
 .fa-times-circle {
   color: white;
@@ -830,6 +836,49 @@ area {
   padding:15px;
 }
 
+/*CARDS*/
+.card-title {
+  font-family: 'titulos';
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  padding-top: 50px;
+  color: black;
+  margin: auto;
+  width: 277px;
+}
+.card-location {
+  font-family: 'firaThin';
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  color: black;
+  font-weight: 900;
+}
+.card-status {
+  font-family: 'enter';
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 0px;
+  color: black;
+  padding-top: 32px;
+  line-height: 22px;
+}
+.card-work {
+  font-family: 'firaThin';
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  line-height: 10px;
+  color: black;
+  width: 250px;
+  margin: auto;
+}
+
 /*STYLE*/
 .tabs {
   width: 100%;
@@ -861,7 +910,7 @@ area {
 }
 .aspen1-triangle {
   top: -154px;
-  left: -116px;
+  left: -225px;
   background-image: url('../images/Etiquetas/aspenCondo.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -872,7 +921,7 @@ area {
 
 .aspen2-triangle {
   top: -154px;
-  left: -116px;
+  left: -225px;
   background-image: url('../images/Etiquetas/aspen1.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -882,7 +931,7 @@ area {
 }
 .aspen3-triangle {
   top: -154px;
-  left: -116px;
+  left: -225px;
   background-image: url('../images/Etiquetas/aspen2.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -893,7 +942,7 @@ area {
 
 .london1-triangle {
   top: -185px;
-  left: 490px;
+  left: 381px;
   background-image: url('../images/Etiquetas/london1.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -904,7 +953,7 @@ area {
 
 .london2-triangle {
   top: -185px;
-  left: 490px;
+  left: 381px;
   background-image: url('../images/Etiquetas/london2.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -914,7 +963,7 @@ area {
 }
 .london3-triangle {
   top: -185px;
-  left: 490px;
+  left: 381px;
   background-image: url('../images/Etiquetas/london3.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -930,7 +979,7 @@ area {
 }
 .aspen-triangle {
   top: -154px;
-  left: -116px;
+  left: -225px;
   padding: 0px;
   padding-top: 10px;
   background-image: url('../images/Etiquetas/aspen.png')!important;
@@ -938,41 +987,43 @@ area {
 
 .bahamas-tirangle {
   top: -104px;
-  left: 290px;
+  left: 181px;
   padding: 20px 10px 10px 10px;
   background-image: url('../images/Etiquetas/bahamas.png')!important;
 }
 .london-triangle {
   top: -185px;
-  left: 490px;
+  left: 381px;
   padding: 10px;
   background-image: url('../images/Etiquetas/london.png')!important;
 }
 .furniture-triangle {
   top: -150px;
-  left: 521px;
+  left: 412px;
   padding: 20px 10px 10px 10px;
   background-image: url('../images/Etiquetas/furniture.png')!important;
 }
 .bsas-triangle {
-  top: 372px;
-  left: 371px;
+  top: 346px;
+  left: 263px;
   background-image: url('../images/Etiquetas/bsAs.png')!important;
 }
 .sfernando-triangle {
   top: 332px;
-  left: 20px;
+  left: -89px;
   background-image: url('../images/Etiquetas/sanFernando.png')!important;
 }
 .caesarea-triangle {
   background-image: url('../images/Etiquetas/caesarea.png')!important;
-  top: 188px;
-  left: 585px;
+  /*top: 188px;
+  left: 585px;*/
+  top: 165px;
+  left: 475px;
 }
 .mallorca-triangle {
   background-image: url('../images/Etiquetas/mallorca.png')!important;
   top: -143px;
-  left: 156px;
+  left: 48px;
   padding: 20px 10px 10px 10px;
 }
 
