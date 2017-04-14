@@ -878,35 +878,49 @@ area {
   width: 250px;
   margin: auto;
 }
+.go-back {
+  cursor: pointer;
+}
 
 /*STYLE*/
 .tabs {
   width: 100%;
   cursor: pointer;
 }
+.top-tab {
+  height: 64px!important;
+}
 .middle-tab {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   height: 74px!important;
 }
-.top-tab {
-  height: 64px!important;
-}
 .bottom-tab {
   height: 74px!important;
 }
-.grey-close {
-  color: black;
-  margin-right: 10px;
-  margin-top: 10px;
-}
 
+.la-top-tab {
+  height: 34.4px!important;
+  border-bottom: 1px solid black;
+}
+.la-middle-tab {
+  border-bottom: 1px solid black;
+  height: 44.4px!important;
+}
+.la-bottom-tab {
+  height: 44.4px!important;
+}
 .ba-bottom-tab {
   border-top: 1px solid black;
   height: 111px!important;
 }
 .ba-top-tab {
   height: 101px!important;
+}
+.grey-close {
+  color: black;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .aspen1-triangle {
   top: -154px;
@@ -917,6 +931,7 @@ area {
   animation-timing-function: ease-in;
   z-index: 20;
   height: 0px;
+  padding: 20px!important;
 }
 
 .aspen2-triangle {
@@ -928,6 +943,7 @@ area {
   animation-timing-function: ease-in;
   z-index: 20;
   height: 0px;
+  padding: 20px!important;
 }
 .aspen3-triangle {
   top: -154px;
@@ -938,11 +954,13 @@ area {
   animation-timing-function: ease-in;
   z-index: 20;
   height: 0px;
+  padding: 20px!important;
 }
 
 .london1-triangle {
   top: -185px;
   left: 381px;
+  padding: 10px;
   background-image: url('../images/Etiquetas/london1.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -954,6 +972,7 @@ area {
 .london2-triangle {
   top: -185px;
   left: 381px;
+  padding: 10px;
   background-image: url('../images/Etiquetas/london2.png')!important;
   background-position: center;
   background-repeat: no-repeat;
@@ -964,9 +983,66 @@ area {
 .london3-triangle {
   top: -185px;
   left: 381px;
+  padding: 10px;
   background-image: url('../images/Etiquetas/london3.png')!important;
   background-position: center;
   background-repeat: no-repeat;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.bsas1-triangle {
+  top: 346px;
+  left: 263px;
+  background-image: url('../images/Etiquetas/vicenteLopez2.png')!important;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.bsas2-triangle {
+  top: 346px;
+  left: 263px;
+  background-image: url('../images/Etiquetas/bsas1.png')!important;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.la1-triangle {
+  top: 154px;
+  left: 85px;
+  background-image: url('../images/Etiquetas/bhills.png')!important;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.la2-triangle {
+  top: 154px;
+  left: 85px;
+  background-image: url('../images/Etiquetas/belair.png')!important;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.la3-triangle {
+  top: 154px;
+  left: 85px;
+  background-image: url('../images/Etiquetas/calabasas.png')!important;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.la4-triangle {
+  top: 154px;
+  left: 85px;
+  background-image: url('../images/Etiquetas/palisades.png')!important;
+  animation-timing-function: ease-in;
+  z-index: 20;
+  height: 0px;
+}
+.la5-triangle {
+  top: 154px;
+  left: 85px;
+  background-image: url('../images/Etiquetas/santaMonica.png')!important;
   animation-timing-function: ease-in;
   z-index: 20;
   height: 0px;
@@ -1006,6 +1082,11 @@ area {
 .bsas-triangle {
   top: 346px;
   left: 263px;
+  background-image: url('../images/Etiquetas/bsAs.png')!important;
+}
+.la-triangle {
+  top: 154px;
+  left: 85px;
   background-image: url('../images/Etiquetas/bsAs.png')!important;
 }
 .sfernando-triangle {
