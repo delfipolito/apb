@@ -224,10 +224,69 @@ $( document ).ready(function(){
 
 	function showContent() {
 		setTimeout(function () {
-        $('.late-content').removeClass('hidden');
-    	}, 800);
+       $('.late-content').removeClass('hidden');
+    }, 800);
 	}
-	function hideContent() {
+	function hideContent(className) {
 		$('.late-content').addClass('hidden');
+		setTimeout(function () {
+       $(className).addClass('hidden');
+    }, 500);
 	}
+
+
+	  // transitions
+	  $("#aspen1-close").click( function() {
+	  	hideContent('.aspen1-triangle');
+	  	$('.aspen1-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#aspen2-close").click( function() {
+	  	hideContent('.aspen2-triangle');
+	  	$('.aspen2-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#aspen3-close").click( function() {
+	  	hideContent('.aspen3-triangle');
+	  	$('.aspen3-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+
+	  $("#london1-close").click( function() {
+	  	hideContent('.london1-triangle');
+	  	$('.london1-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#london2-close").click( function() {
+	  	hideContent('.london2-triangle');
+	  	$('.london2-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#london3-close").click( function() {
+	  	hideContent('.london3-triangle');
+	  	$('.london3-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#bsas1-close").click( function() {
+	  	hideContent('.bsas1-triangle');
+	  	$('.bsas1-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#bsas2-close").click( function() {
+	  	hideContent('.bsas2-triangle');
+	  	$('.bsas2-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#la1-close").click( function() {
+	  	hideContent('.la1-triangle');
+	  	$('.la1-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#la2-close").click( function() {
+	  	hideContent('.la2-triangle');
+	  	$('.la2-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#la3-close").click( function() {
+	  	hideContent('.la3-triangle');
+	  	$('.la3-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#la4-close").click( function() {
+	  	hideContent('.la4-triangle');
+	  	$('.la4-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
+	  $("#la5-close").click( function() {
+	  	hideContent('.la5-triangle');
+	  	$('.la5-triangle').animate({height: "0px"}, "slow", "swing");
+	  });
 })
