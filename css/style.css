@@ -798,6 +798,21 @@ area {
   padding-top: 51px;
   text-align: center;
 }
+.dots {
+  font-family: 'firaThin';
+  letter-spacing: 1.7px;
+  font-size: 16px;
+  color: rgb(205,23,25);
+  text-transform: uppercase;
+  text-align: center;
+}
+.little-dot {
+  width: 24px;
+  height: 5px;
+  background-color: rgb(205,23,25);
+  padding: 0 9px;
+  margin: 0 10px;
+}
 .fa-times-circle {
   color: white;
   cursor: pointer;

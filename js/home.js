@@ -1,4 +1,8 @@
 $( document ).ready(function(){
+	$("body").on("contextmenu", "img", function(e) {
+	  return false;
+	});
+
 	 var cont = 1;
 
 	 window.setInterval(function(){
@@ -152,6 +156,16 @@ $( document ).ready(function(){
 	  });
 	  $("#close-la").click( function() {
 	  	$('.la-triangle').addClass('hidden');
+	  });
+
+
+	  $("#marea4").click( function() {
+	  	alert('london');
+	  	console.log("hola");
+	  });
+	  $("#area4").click( function() {
+	  	alert('london');
+	  	console.log("hola");
 	  });
 
 	  // transitions
