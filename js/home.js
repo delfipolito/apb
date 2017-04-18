@@ -303,4 +303,48 @@ $( document ).ready(function(){
 	  	hideContent('.la5-triangle');
 	  	$('.la5-triangle').animate({height: "0px"}, "slow", "swing");
 	  });
+
+
+
+	  // MOBILE
+	  $("#close-modal").click( function() {
+	  	$('.mobile-modal').addClass('hidden');
+	  });
+	  $("#mobile-bahamas").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/bahamas.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-sfernando").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/sfernando.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-mallorca").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/mallorca.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-caesarea").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/caesarea.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-furniture").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/furniture.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  
+	  $("#mobile-la").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/la1.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-aspen").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/aspen1.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-ba").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/ba1.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
+	  $("#mobile-london").click( function() {
+	  	$('.mobile-modal').css("background-image", "url('./images/Mobile/london1.png')");
+	  	$('.mobile-modal').removeClass('hidden');
+	  });
 })

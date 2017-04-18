@@ -1155,3 +1155,67 @@ area {
   font-size: 12px;
   margin: 0px;
 }
+
+
+
+/*MOBILE BUTTONS*/
+.mobile-button {
+  width: 17px;
+  height: 5px;
+  background-color: rgb(205,23,25);
+  padding: 7px 0px;
+  margin: 0px 10px;
+  position: absolute;
+  cursor: pointer;
+}
+.mobile-modal {
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  top: 0;
+  background-image: url('../images/Mobile/sfernando.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; 
+  padding: 10px;
+}
+
+.la-mobile {
+  top: 136px;
+  left: 32px;
+}
+.aspen-mobile {
+  top: 120px;
+  left: 57px;
+}
+.bahamas-mobile {
+  top: 162px;
+  left: 109px;
+}
+.sfernando-mobile {
+  top: 279px;
+  left: 173px;
+}
+.ba-mobile {
+  top: 295px;
+  left: 180px;
+}
+.london-mobile {
+  top: 93px;
+  left: 280px;
+}
+.mallorca-mobile {
+  top: 127px;
+  left: 286px;
+}
+.furniture-mobile {
+  top: 120px;
+  left: 306px;
+}
+.caesarea-mobile {
+  top: 137px;
+  left: 359px;
+}

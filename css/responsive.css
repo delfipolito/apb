@@ -21,6 +21,16 @@
 
 
 @media (max-width: 767px) { /*Para monitores xs*/
+  .navbar-nav {
+    margin: 7.5px 15px!important;
+  }
+  .margin-bottom {
+    margin-bottom: 5px!important;
+  }
+  .margin-top {
+    margin-top: 15px!important;
+  }
+  .work-title {line-height: 29px;}
   .container {
     width: 90%;
     margin: 5%;
