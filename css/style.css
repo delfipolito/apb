@@ -879,7 +879,7 @@ area {
   font-size: 19px;
   letter-spacing: 0.5px;
   margin: 0px;
-  padding-top: 50px;
+  padding-top: 60px;
   color: black;
   margin: auto;
   width: 277px;
@@ -900,7 +900,7 @@ area {
   letter-spacing: 2px;
   margin: 0px;
   color: black;
-  padding-top: 32px;
+  padding-top: 21px;
   line-height: 22px;
 }
 .card-work {
@@ -1044,7 +1044,7 @@ area {
   height: 0px;
 }
 .la1-triangle {
-  top: 154px;
+  top: 163px;
   left: 85px;
   background-image: url('../images/Etiquetas/bhills.png')!important;
   animation-timing-function: ease-in;
@@ -1076,7 +1076,7 @@ area {
   height: 0px;
 }
 .la5-triangle {
-  top: 154px;
+  top: 159px;
   left: 85px;
   background-image: url('../images/Etiquetas/santaMonica.png')!important;
   animation-timing-function: ease-in;
