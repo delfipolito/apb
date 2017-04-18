@@ -12,6 +12,10 @@
  src: url('../fonts/FiraSansCondensed-Regular.ttf') format('opentype');
 }
 @font-face {
+ font-family: 'firaLight';
+ src: url('../fonts/FiraSansCondensed-Light.ttf') format('opentype');
+}
+@font-face {
  font-family: 'firaThin';
  src: url('../fonts/FiraSansCondensed-Thin.ttf') format('opentype');
 }
@@ -76,6 +80,12 @@ section{
   display: block;
   text-align: center;
 }
+.margin-bottom {
+  margin-bottom: 14px!important;
+}
+.margin-top {
+  margin-top: 23px!important;
+}
 
 /*NAVBAR*/
 .hamburguer {
@@ -96,6 +106,12 @@ section{
   font-size: 12px;
   font-weight: 500;
 }
+.navbar-right {
+  width: 42%;
+}
+.navbar-left {
+  width: 42%;
+}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent!important;
 }
@@ -110,47 +126,47 @@ section{
   text-align: center;
   padding: 0px!important;
   float: none;
+  margin-top: -8px;
+}
+.links-nav-right {
+  width: 38.09%;
+}
+.links-nav-left {
+  width: 38.09%;
+}
+.instagram {
+  width: 23.8%;
 }
 @media (min-width: 768px) {
-  .navbar-left {
-    width: calc(50% - 25px);
-  }
-  .navbar-right {
-    width: calc(50% - 25px);
-  }
-  .links-nav-right {
-    width: 310px;
-  }
   .links-nav-left {
-    width: 310px;
     float: right!important;
   }
   .instagram {
-    width: 50px;
     position: absolute;
     right: 21px;
     bottom: 10px;
+  }
+}
+@media (max-width: 1250px) {
+  .navbar-right {
+    width: 45%;
+  }
+  .navbar-left {
+    width: 45%;
   }
 }
 
 
 @media (min-width: 1045px) and (max-width: 1340px) {
   .links-nav-right {
-    width: 200px;
   }
   .links-nav-left {
-    width: 200px;
     float: right!important;
   }
 
 }
 @media (min-width: 768px) and (max-width: 1045px) {
-  .links-nav-right {
-    width: 100px;
-  }
-  .links-nav-left {
-    width: 100px;
-  }
+  
 }
 /*COVER*/
 
@@ -216,6 +232,7 @@ section{
   letter-spacing: 2.5px;
   text-align: justify;
   margin-bottom: 20px;
+  font-weight: 900;
 }
 .about-mobile {
   display: none;
@@ -229,11 +246,11 @@ section{
   background-color: #f9f9f9;
   height: 115%;
   padding-top: 30px;
-  padding-bottom: 130px;
+  padding-bottom: 202px;
 }
 
 .project-explanation {
-  font-family: 'firaThin';
+  font-family: 'firaLight';
   font-size: 13px;
   line-height: 21px;
   letter-spacing: 2px;
@@ -306,6 +323,7 @@ area {
 }
 .contact-p {
   margin-bottom: 30px;
+  margin-top: 31px;
 }
 .contact-title {
   font-size: 60px;
@@ -339,7 +357,7 @@ area {
 
 /*REPETITIVE*/
 .line {
-  width: 81px;
+  width: 104px;
   line-height: 3.3em;
   font-size: 0.3125em;
   display: block;
@@ -394,13 +412,15 @@ area {
   margin-bottom: 0px;
   font-family: 'titulos';
   letter-spacing: 4px;
+  line-height: 36px;
 }
 .profession {
   margin: 0px;
-  font-family: 'firaThin';
+  font-family: 'firaLight';
   font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  color: #464545;
 }
 .profession-margin {
   margin-left: 63px;
@@ -464,6 +484,7 @@ area {
   letter-spacing: 4px;
   z-index: 3;
   color: black;
+  line-height: 47px;
 }
 .date {
   margin: 0px;
@@ -483,7 +504,7 @@ area {
 }
 .quote-title {
   font-family: 'quotes';
-  font-size: 13.5px;
+  font-size: 15.8px;
   line-height: 28px;
   letter-spacing: 2px;
   text-align: justify;
@@ -864,7 +885,7 @@ area {
   width: 277px;
 }
 .card-location {
-  font-family: 'firaThin';
+  font-family: 'firaLight';
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.5px;
@@ -883,7 +904,7 @@ area {
   line-height: 22px;
 }
 .card-work {
-  font-family: 'firaThin';
+  font-family: 'firaLight';
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 0.5px;
@@ -1009,7 +1030,7 @@ area {
 .bsas1-triangle {
   top: 346px;
   left: 263px;
-  background-image: url('../images/Etiquetas/vicenteLopez2.png')!important;
+  background-image: url('../images/Etiquetas/bsas1.png')!important;
   animation-timing-function: ease-in;
   z-index: 20;
   height: 0px;
@@ -1017,7 +1038,7 @@ area {
 .bsas2-triangle {
   top: 346px;
   left: 263px;
-  background-image: url('../images/Etiquetas/bsas1.png')!important;
+  background-image: url('../images/Etiquetas/vicenteLopez2.png')!important;
   animation-timing-function: ease-in;
   z-index: 20;
   height: 0px;
@@ -1130,7 +1151,7 @@ area {
   margin: 0px;
 }
 .beige-subtitle {
-  font-family: 'firaThin';
-  font-size: 9px;
+  font-family: 'firaLight';
+  font-size: 12px;
   margin: 0px;
 }
