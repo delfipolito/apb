@@ -536,7 +536,7 @@ area {
 }
 .mallorca-work-title {
   position: absolute;
-  top: 0;
+  top: 49px;
   left: 20%;
 }
 .mallorca-name {
@@ -544,14 +544,14 @@ area {
 }
 .mallorca-quote {
   position: absolute;
-  top: 771px;
+  top: 720px;
   width: 46%;
   right: 40px;
 }
 .mallorca-img-1 {
   width: 45%;
   position: absolute;
-  top: 361px;
+  top: 302px;
   left: 0;
 }
 .mallorca-img-2 {
@@ -597,11 +597,11 @@ area {
   position: absolute;
   right: 0;
   width: 45%;
-  top: 330px;
+  top: 279px;
 }
 .caesarea-work-title {
   position: absolute;
-  top: 20px;
+  top: 39px;
   right: 0;
   width: 45%;
 }
@@ -623,7 +623,7 @@ area {
   position: absolute;
   left: 0;
   width: 45%;
-  top: 328px;
+  top: 225px;
 }
 .aspen1-img-2 {
   position: absolute;
@@ -645,7 +645,7 @@ area {
 }
 .aspen1-quote {
   position: absolute;
-  top: 739px;
+  top: 725px;
   width: 50%;
   right: 0;
 }
@@ -653,7 +653,7 @@ area {
 /*ASPEN CONDO*/
 .aspen-condo-title {
   position: absolute;
-  top: 50px;
+  top: 71px;
   right: 0;
   width: 45%;
 }
@@ -676,7 +676,7 @@ area {
 /*BEBERLY HILLS*/
 .bhills-work-title {
   position: absolute;
-  top: 33px;
+  top: 66px;
   left: 15%;
 }
 .bhills-img-1 {
@@ -726,7 +726,7 @@ area {
   position: absolute;
   right: 0;
   width: 45%;
-  top: 395px;
+  top: 339px;
 }
 .aspen2-quote {
   position: absolute;
@@ -743,7 +743,7 @@ area {
   position: absolute;
   left: 0;
   width: 40%;
-  top: 382px;
+  top: 356px;
 }
 .bsas-img-2 {
   top: 0;
@@ -753,7 +753,7 @@ area {
 }
 .bsas-title {
   position: absolute;
-  top: 148px;
+  top: 66px;
   left: 101px;
 }
 .bsas-margin {
@@ -768,7 +768,7 @@ area {
   position: absolute;
   right: 0;
   width: 45%;
-  top: 350px;
+  top: 325px;
   overflow: hidden;
 }
 .belair-item img {
@@ -791,7 +791,7 @@ area {
 }
 .belair-work-title {
   position: absolute;
-  top: 100px;
+  top: 78px;
   right: 0;
   width: 45%;
 }
