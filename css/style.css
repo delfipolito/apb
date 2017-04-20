@@ -1181,6 +1181,74 @@ area {
   background-size: contain; 
   padding: 10px;
 }
+.general-modal {
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; 
+  padding: 10px;
+}
+.mobile-modal-ba-1 {
+  background-image: url('../images/Mobile/ba1.png');
+}
+.mobile-modal-ba-2 {
+  background-image: url('../images/Mobile/ba2.png');
+}
+
+.mobile-modal-aspen-1 {
+  background-image: url('../images/Mobile/aspen1.png');
+}
+.mobile-modal-aspen-2 {
+  background-image: url('../images/Mobile/aspen2.png');
+}
+.mobile-modal-aspen-3 {
+  background-image: url('../images/Mobile/aspen3.png');
+}
+
+.mobile-modal-london-1 {
+  background-image: url('../images/Mobile/london1.png');
+}
+.mobile-modal-london-2 {
+  background-image: url('../images/Mobile/london2.png');
+}
+.mobile-modal-london-3 {
+  background-image: url('../images/Mobile/london3.png');
+}
+
+.mobile-modal-la-1 {
+  background-image: url('../images/Mobile/la1.png');
+}
+.mobile-modal-la-2 {
+  background-image: url('../images/Mobile/la2.png');
+}
+.mobile-modal-la-3 {
+  background-image: url('../images/Mobile/la3.png');
+}
+.mobile-modal-la-4 {
+  background-image: url('../images/Mobile/la4.png');
+}
+.mobile-modal-la-5 {
+  background-image: url('../images/Mobile/la5.png');
+}
+
+.next {
+  background: transparent;
+  border: transparent;
+  float: right;
+  height: 73vw;
+  margin-right: -20px;
+}
+.before {
+  background: transparent;
+  border: transparent;
+  height: 73vw;
+}
 
 .la-mobile {
   top: 136px;
