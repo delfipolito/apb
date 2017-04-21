@@ -59,6 +59,10 @@
     left: 5%;
     top: 389px;
   }
+  .belair-quote {
+    left: 5%;
+    top: 640px; 
+  }
   #mallorca {
     height: 700px;
     margin-top: 100px!important;
@@ -73,6 +77,10 @@
   #caesaria {height: 650px;}
   .caesarea-img-2 {top: 178px;}
   .caesarea-quote {top: 410px;}
+  .belair-quote {
+    left: 5%;
+    top: 360px;
+  }
   .caesarea-work-title {width: 57%;}
   #aspen1 { height: 650px;}
   .aspen1-work-title{
@@ -255,6 +263,11 @@
     width: 90%;
     left: 5%;
     top: 689px;
+  }
+  .belair-quote {
+    position: absolute;
+    top: 641px;
+    right: inherit;
   }
   #mallorca {height: 821px;}
   .mallorca-img-1 {top: 245px;}
