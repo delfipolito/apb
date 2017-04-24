@@ -87,6 +87,19 @@ section{
   margin-top: 23px!important;
 }
 
+/*COVER*/
+#covertitle{
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.arroba {
+  font-family: 'arroba';
+}
+.city {
+  font-family: 'ciudad';
+  text-transform: uppercase;
+}
 /*NAVBAR*/
 .hamburguer {
   margin-left: 10px;
@@ -186,7 +199,7 @@ section{
 }
 
 #border{
-  height: calc(100% - 40px);
+  height: calc(100% - 40px)!important;
   width: calc(100% - 40px);
   margin: auto;
   margin-top: 20px;
@@ -208,6 +221,7 @@ section{
   right: calc(50% - 50px);
   font-family: 'enter';
   letter-spacing: 2px;
+  outline: none;
 }
 /*WHO*/
 #who {
@@ -233,6 +247,12 @@ section{
   text-align: justify;
   margin-bottom: 20px;
   font-weight: 900;
+  -moz-hyphens:auto;
+  -ms-hyphens:auto;
+  -webkit-hyphens:auto;
+  -o-hyphens:auto;
+  hyphens:auto;
+  word-wrap: break-word;
 }
 .about-mobile {
   display: none;
@@ -511,6 +531,12 @@ area {
   margin-bottom: 20px;
   text-align: center;
   z-index: 3;
+  -moz-hyphens:auto;
+  -ms-hyphens:auto;
+  -webkit-hyphens:auto;
+  -o-hyphens:auto;
+  hyphens:auto;
+  word-wrap: break-word;
 }
 .work-sections {
   margin-top: 30px;

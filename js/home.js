@@ -15,37 +15,37 @@ $( document ).ready(function(){
 		switch (cont) {
 			case 1: 
 				background = 'url(./images/Aspen.jpg)'
-				text = 'Aspen';
+				text = '<span class="arroba">@</span><span class="city"> Aspen</span>';
 				color = 'white';
 			break;
 			case 2:
 				background = 'url(./images/BuenosAires.jpg)'
-				text = 'Buenos Aires'; 
+				text = '<span class="arroba">@</span><span class="city"> Buenos Aires</span>'; 
 				color = 'white';
 			break;
 			case 3:
 				background = 'url(./images/Caesarea.jpg)'
-				text = 'Caesarea'; 
+				text = '<span class="arroba">@</span><span class="city"> Caesarea</span>';
 				color = 'black';
 			break;
 			case 4:
 				background = 'url(./images/Londres.jpg)'
-				text = 'Londres'; 
+				text = '<span class="arroba">@</span><span class="city"> Londres</span>';
 				color = 'black';
 			break;
 			case 5:
 				background = 'url(./images/LosAngeles.jpg)'
-				text = 'Los Ángeles'; 
+				text = '<span class="arroba">@</span><span class="city"> Los Ángeles</span>';
 				color = 'black';
 			break;
 			case 6:
 				background = 'url(./images/Mallorca.jpg)'
-				text = 'Mallorca'; 
+				text = '<span class="arroba">@</span><span class="city"> Mallorca</span>';
 				color = 'white';
 			break;
 			case 7:
 				background = 'url(./images/WindermereIsland.jpg)'
-				text = 'Windermere Island';
+				text = '<span class="arroba">@</span><span class="city"> Windermere Island</span>';
 				color = 'white'; 
 			break;
 			default: 
@@ -57,6 +57,13 @@ $( document ).ready(function(){
  						.css({'background-image': background})
  						.animate({opacity: 1});
  			});
+ 			$('#covertitle')
+ 			.animate({opacity: 0}, 'slow', function() {
+ 					$(this)
+ 						.html(text)
+ 						.animate({opacity: 1});
+ 			});
+
 
  		if (color == 'white') {
  			$('#border')
@@ -71,6 +78,12 @@ $( document ).ready(function(){
  						.css({'color': 'white'})
  						.animate({opacity: 1});
  			});
+ 			$('#covertitle')
+ 			.animate({opacity: 0}, 'slow', function() {
+ 					$(this)
+ 						.css({'color': 'white'})
+ 						.animate({opacity: 1});
+ 			});
  		} else if (color == 'black'){
  			$('#border')
  			.animate({opacity: 0}, 'slow', function() {
@@ -79,6 +92,12 @@ $( document ).ready(function(){
  						.animate({opacity: 1});
  			});
  			$('.enter-button')
+ 			.animate({opacity: 0}, 'slow', function() {
+ 					$(this)
+ 						.css({'color': 'black'})
+ 						.animate({opacity: 1});
+ 			});
+ 			$('#covertitle')
  			.animate({opacity: 0}, 'slow', function() {
  					$(this)
  						.css({'color': 'black'})
@@ -100,6 +119,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-caesarea").click( function() {
 	  	$('.caesarea-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area2").mouseenter( function() {
@@ -107,6 +127,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-furniture").click( function() {
 	  	$('.furniture-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area3").mouseenter( function() {
@@ -114,6 +135,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-mallorca").click( function() {
 	  	$('.mallorca-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area4").mouseenter( function() {
@@ -121,6 +143,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-london").click( function() {
 	  	$('.london-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area5").mouseenter( function() {
@@ -128,6 +151,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-bsas").click( function() {
 	  	$('.bsas-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area6").mouseenter( function() {
@@ -135,6 +159,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-sfernando").click( function() {
 	  	$('.sfernando-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area7").mouseenter( function() {
@@ -142,6 +167,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-bahamas").click( function() {
 	  	$('.bahamas-tirangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area8").mouseenter( function() {
@@ -149,6 +175,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-aspen").click( function() {
 	  	$('.aspen-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 	  $("#area9").mouseenter( function() {
@@ -156,6 +183,7 @@ $( document ).ready(function(){
 	  });
 	  $("#close-la").click( function() {
 	  	$('.la-triangle').addClass('hidden');
+	  	hideContent();
 	  });
 
 
@@ -275,6 +303,7 @@ $( document ).ready(function(){
 	  	hideContent('.london3-triangle');
 	  	$('.london3-triangle').animate({height: "0px"}, "slow", "swing");
 	  });
+
 	  $("#bsas1-close").click( function() {
 	  	hideContent('.bsas1-triangle');
 	  	$('.bsas1-triangle').animate({height: "0px"}, "slow", "swing");
@@ -283,6 +312,7 @@ $( document ).ready(function(){
 	  	hideContent('.bsas2-triangle');
 	  	$('.bsas2-triangle').animate({height: "0px"}, "slow", "swing");
 	  });
+
 	  $("#la1-close").click( function() {
 	  	hideContent('.la1-triangle');
 	  	$('.la1-triangle').animate({height: "0px"}, "slow", "swing");
