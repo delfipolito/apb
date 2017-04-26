@@ -619,6 +619,11 @@ area {
   transform: scale(1.1);
 
 }
+.item-hovered{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .caesarea-img-2 {
   position: absolute;
   right: 0;

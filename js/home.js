@@ -2,6 +2,40 @@ $( document ).ready(function(){
 	$("body").on("contextmenu", "img", function(e) {
 	  return false;
 	});
+	
+	$(window).scroll(function() {
+    var caesarea = $('.caesarea-item').offset().top;
+	  if ($(window).scrollTop() >= (caesarea - 120) && $(window).scrollTop() <= (caesarea + 400)){	
+	  	$('#animate1').addClass('item-hovered');
+	  } 
+	  if ($(window).scrollTop() ==  $('.caesarea-item').outerHeight()/2){
+	  	$('#animate1').removeClass('item-hovered');
+	  }
+	  var belair = $('.belair-item').offset().top;
+	  if ($(window).scrollTop() == (belair - 120)){
+	  	$('#animate3').addClass('item-hovered');
+	  } 
+	  if ($(window).scrollTop() ==  $('.belair-item').outerHeight()/2){
+	  	$('#animate3').removeClass('item-hovered');
+	  }
+
+	  var aspen1 = $('.aspen1-img-2').offset().top;
+	  if ($(window).scrollTop() == (aspen1 - 120)){
+	  	$('#animate2').addClass('item-hovered');
+	  } 
+	  if ($(window).scrollTop() ==  $('.aspen1-img-2').outerHeight()/2){
+	  	$('#animate2').removeClass('item-hovered');
+	  }
+	  
+	  var aspen2 = $('.aspen2-img-1').offset().top;
+	  if ($(window).scrollTop() == (aspen2 - 120)){
+	  	$('#animate4').addClass('item-hovered');
+	  } 
+	  if ($(window).scrollTop() ==  $('.aspen2-img-1').outerHeight()/2){
+	  	$('#animate4').removeClass('item-hovered');
+	  }
+	});
+	
 
 	 var cont = 1;
 
@@ -14,37 +48,44 @@ $( document ).ready(function(){
 		var color = '';
 		switch (cont) {
 			case 1: 
-				background = 'url(./images/Aspen.jpg)'
+				background = 'url(./images/Aspen.jpg)';
+				center = 'center';
 				text = '<span class="arroba">@</span><span class="city"> Aspen</span>';
 				color = 'white';
 			break;
 			case 2:
 				background = 'url(./images/BuenosAires.jpg)'
+				center = 'center';
 				text = '<span class="arroba">@</span><span class="city"> Buenos Aires</span>'; 
 				color = 'white';
 			break;
 			case 3:
 				background = 'url(./images/Caesarea.jpg)'
+				center = 'center';
 				text = '<span class="arroba">@</span><span class="city"> Caesarea</span>';
 				color = 'black';
 			break;
 			case 4:
 				background = 'url(./images/Londres.jpg)'
+				center = 'center 30%';
 				text = '<span class="arroba">@</span><span class="city"> Londres</span>';
 				color = 'black';
 			break;
 			case 5:
 				background = 'url(./images/LosAngeles.jpg)'
+				center = 'center';
 				text = '<span class="arroba">@</span><span class="city"> Los Ángeles</span>';
 				color = 'black';
 			break;
 			case 6:
 				background = 'url(./images/Mallorca.jpg)'
+				center = 'center 60%';
 				text = '<span class="arroba">@</span><span class="city"> Mallorca</span>';
 				color = 'white';
 			break;
 			case 7:
 				background = 'url(./images/WindermereIsland.jpg)'
+				center = 'center 35%';
 				text = '<span class="arroba">@</span><span class="city"> Windermere Island</span>';
 				color = 'white'; 
 			break;
@@ -54,7 +95,7 @@ $( document ).ready(function(){
 		  $('#home')
  			.animate({opacity: 0}, 'slow', function() {
  					$(this)
- 						.css({'background-image': background})
+ 						.css({'background-image': background, 'background-position': center})
  						.animate({opacity: 1});
  			});
  			$('#covertitle')
