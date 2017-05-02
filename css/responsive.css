@@ -10,8 +10,8 @@
 }
 @media (min-width: 350px) and (max-width: 767px) { /*Para iphone 6*/
   .mallorca-img-2 {top: 1px;}
-  .work-title {font-size: 30px;}
-  #beberlyHills {height: 545px;}
+  .work-title {font-size: 22px;}
+  #beberlyHills {height: 500px;}
 }
 @media (max-width: 350px) { /*Para iphone 5*/
   .mallorca-img-2 {top: 18px;}
@@ -21,6 +21,9 @@
 
 
 @media (max-width: 767px) { /*Para monitores xs*/
+  .work-title {
+    font-size: 22px;
+  }
   .navbar-nav {
     margin: 7.5px 15px!important;
   }
@@ -30,7 +33,10 @@
   .margin-top {
     margin-top: 15px!important;
   }
-  .work-title {line-height: 29px;}
+  .line {
+    width: 75px;
+  }
+  .work-title {line-height: 22px;}
   .container {
     width: 90%;
     margin: 5%;
@@ -41,8 +47,8 @@
     padding-bottom: 30px;
   }
   
-  .location {font-size: 14px;}
-  .date {font-size: 14px;}
+  .location {font-size: 10px;}
+  .date {font-size: 10px;}
   .quote-title {width: 90%;}
   .work-title-container {
     top:0;
@@ -57,26 +63,22 @@
   .mallorca-quote {
     width: 90%;
     left: 5%;
-    top: 389px;
-  }
-  .belair-quote {
-    left: 5%;
-    top: 640px; 
+    top: 350px;
   }
   #mallorca {
     height: 700px;
     margin-top: 100px!important;
     padding-top: 30px;
   }
-  .mallorca-img-1 {top: 175px;}
+  .mallorca-img-1 {top: 124px;}
   .mallorca-img-2 {
     width: 50%;
     position: absolute;
     right: 0px;
   }
   #caesaria {height: 650px;}
-  .caesarea-img-2 {top: 178px;}
-  .caesarea-quote {top: 410px;}
+  .caesarea-img-2 {top: 109px;}
+  .caesarea-quote {top: 345px;}
   .belair-quote {
     left: 5%;
     top: 360px;
@@ -88,9 +90,9 @@
     left: 0;
     top: 0;
   }
-  .aspen1-img-1 {top: 160px;}
+  .aspen1-img-1 {top: 117px;}
   .aspen1-quote {
-    top: 376px;
+    top: 350px;
     right: initial;
   }
   .aspen1-margin {
@@ -100,14 +102,14 @@
     margin-left: 0px;
   }
   #aspenCondo {height: 375px;}
-  .aspen-condo-img-2 {top: 165px;}
-  .bhills-img-2 {top: 148px;}
+  .aspen-condo-img-2 {top: 119px;}
+  .bhills-img-2 {top: 110px;}
   .bhills-img-1 {top: 200px;}
   .bhills-work-title {
     width: 100%;
     left: 0;
   }
-  #aspen2 {height: 720px;}
+  #aspen2 {height: 669px;}
   .aspen2-margin {margin-left: 0px;}
   .aspen2-title {
     right: 0%;
@@ -115,11 +117,11 @@
   }
   .aspen2-img-1 {width: 46%;}
   .aspen2-img-2 {
-    top: 190px;
+    top: 121px;
     width: 51%;
   }
   .aspen2-quote {
-    top: 389px;
+    top: 333px;
     left: inherit;
   }
   #buenosAires{height: 450px;}
@@ -128,7 +130,7 @@
     margin: auto;
     left: inherit;
   }
-  .bsas-img-2 {top: 160px;}
+  .bsas-img-2 {top: 120px;}
   .bsas-img-1 {top: 202px;}
   .bsas-margin {margin-left: 0px;}
   #belAir {
@@ -138,10 +140,13 @@
   .belair-work-title {width: 50%;}
   .belair-img-1 {width: 48%;}
   .belair-item {
-    top: 170px;
+    top: 132px;
     width: 47%;
   }
-
+  .belair-quote {
+    left: 5%;
+    top: 327px; 
+  }
 	#border{
 		height: calc(100% - 60px);
 		border: solid 3px;
