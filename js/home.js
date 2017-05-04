@@ -68,7 +68,7 @@ $( document ).ready(function(){
 			case 4:
 				background = 'url(./images/Londres.jpg)'
 				center = 'center 30%';
-				text = '<span class="arroba">@</span><span class="city"> Londres</span>';
+				text = '<span class="arroba">@</span><span class="city"> London</span>';
 				color = 'black';
 			break;
 			case 5:
@@ -93,13 +93,13 @@ $( document ).ready(function(){
 		}
 
 		  $('#home')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.css({'background-image': background, 'background-position': center})
  						.animate({opacity: 1});
  			});
  			$('#covertitle')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.html(text)
  						.animate({opacity: 1});
@@ -108,32 +108,32 @@ $( document ).ready(function(){
 
  		if (color == 'white') {
  			$('#border')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.css({'border-color': 'white'})
  						.animate({opacity: 1});
  			});
  			$('.enter-button')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.css({'color': 'white'})
  						.animate({opacity: 1});
  			});
  			$('#covertitle')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.css({'color': 'white'})
  						.animate({opacity: 1});
  			});
  		} else if (color == 'black'){
  			$('#border')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.css({'border-color': 'black'})
  						.animate({opacity: 1});
  			});
  			$('.enter-button')
- 			.animate({opacity: 0}, 'slow', function() {
+ 			.animate({opacity: 0.5}, 'slow', function() {
  					$(this)
  						.css({'color': 'black'})
  						.animate({opacity: 1});
@@ -146,10 +146,10 @@ $( document ).ready(function(){
  			});
  		}
  		
-			if (cont<7) {
+			if (cont < 8) {
 				cont = cont + 1;
 			} else {
-				cont = 1;
+				enterPage();
 			}
 			
 		}, 5000);
