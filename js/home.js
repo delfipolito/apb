@@ -50,43 +50,43 @@ $( document ).ready(function(){
 			case 1: 
 				background = 'url(./images/Aspen.jpg)';
 				center = 'center';
-				text = '<span class="arroba">@</span><span class="city"> Aspen</span>';
+				text = '<span class="arroba">@</span><span class="city">Aspen</span>';
 				color = 'white';
 			break;
 			case 2:
 				background = 'url(./images/BuenosAires.jpg)'
 				center = 'center';
-				text = '<span class="arroba">@</span><span class="city"> Buenos Aires</span>'; 
+				text = '<span class="arroba">@</span><span class="city">Buenos Aires</span>'; 
 				color = 'white';
 			break;
 			case 3:
 				background = 'url(./images/Caesarea.jpg)'
 				center = 'center';
-				text = '<span class="arroba">@</span><span class="city"> Caesarea</span>';
+				text = '<span class="arroba">@</span><span class="city">Caesarea</span>';
 				color = 'black';
 			break;
 			case 4:
 				background = 'url(./images/Londres.jpg)'
 				center = 'center 30%';
-				text = '<span class="arroba">@</span><span class="city"> London</span>';
+				text = '<span class="arroba">@</span><span class="city">London</span>';
 				color = 'black';
 			break;
 			case 5:
 				background = 'url(./images/LosAngeles.jpg)'
 				center = 'center';
-				text = '<span class="arroba">@</span><span class="city"> Los Ángeles</span>';
+				text = '<span class="arroba">@</span><span class="city">Los Ángeles</span>';
 				color = 'black';
 			break;
 			case 6:
 				background = 'url(./images/Mallorca.jpg)'
 				center = 'center 60%';
-				text = '<span class="arroba">@</span><span class="city"> Mallorca</span>';
+				text = '<span class="arroba">@</span><span class="city">Mallorca</span>';
 				color = 'white';
 			break;
 			case 7:
 				background = 'url(./images/WindermereIsland.jpg)'
 				center = 'center 35%';
-				text = '<span class="arroba">@</span><span class="city"> Windermere Island</span>';
+				text = '<span class="arroba">@</span><span class="city">Windermere Island</span>';
 				color = 'white'; 
 			break;
 			default: 

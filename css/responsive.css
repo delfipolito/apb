@@ -21,6 +21,10 @@
 
 
 @media (max-width: 767px) { /*Para monitores xs*/
+  #covertitle {
+    font-size: 25px;
+    letter-spacing: 7px;
+  }
   .work-title {
     font-size: 22px;
   }
