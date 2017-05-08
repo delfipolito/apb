@@ -79,11 +79,12 @@
   #caesaria {height: 650px;}
   .caesarea-img-2 {top: 109px;}
   .caesarea-quote {top: 345px;}
+  .caesarea-margin {margin-left: 0px;}
   .belair-quote {
     left: 5%;
     top: 360px;
   }
-  .caesarea-work-title {width: 57%;}
+  .caesarea-work-title {width: 45%;}
   #aspen1 { height: 650px;}
   .aspen1-work-title{
     width: 51%;
@@ -96,7 +97,7 @@
     right: initial;
   }
   .aspen1-margin {
-    margin-left: 30px;
+    margin-left: 0px;
   }
   .aspen-condo-margin {
     margin-left: 0px;
@@ -104,7 +105,7 @@
   #aspenCondo {height: 375px;}
   .aspen-condo-img-2 {top: 119px;}
   .bhills-img-2 {top: 110px;}
-  .bhills-img-1 {top: 200px;}
+  .bhills-img-1 {top: 161px;}
   .bhills-work-title {
     width: 100%;
     left: 0;
@@ -131,7 +132,7 @@
     left: inherit;
   }
   .bsas-img-2 {top: 120px;}
-  .bsas-img-1 {top: 202px;}
+  .bsas-img-1 {top: 174px;}
   .bsas-margin {margin-left: 0px;}
   #belAir {
     height: 500px;
