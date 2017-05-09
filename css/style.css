@@ -100,6 +100,31 @@ section{
   font-family: 'ciudad';
   text-transform: uppercase;
 }
+
+.wrapper-top {
+  height: 100%; 
+  position: relative;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wrapper-bottom {
+  z-index: -1;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /*NAVBAR*/
 .hamburguer {
   margin-left: 10px;
@@ -206,6 +231,8 @@ section{
   border: solid 2px;
   border-color: transparent;
   text-align: center;
+  position: absolute;
+  left: 20px;
 }
 
 .enter-button {
