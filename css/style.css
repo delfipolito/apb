@@ -1344,3 +1344,14 @@ area {
   top: 137px;
   left: 359px;
 }
+
+/*PRELOADER*/
+#preloader{
+  position:absolute;
+  top:-100px;/*dont put in DOM*/
+}
+
+#preloader > img{
+  width:1px;
+  height:1px;
+}

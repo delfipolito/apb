@@ -15,64 +15,21 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js" ></script>
     <meta http-equiv="imagetoolbar" content="no" /> <!-- No save icons -->
-    <script type="text/javascript">
-      var changeImage = function(id, image, center, text, color){
-        $(id).css('background-image', 'url('+image+')');
-        $(id).css('background-position', center);
-      };
 
-      $(window).load(function() {
-
-        var images = ['./images/cover.png','./images/Aspen.jpg', './images/BuenosAires.jpg', './images/Caesarea.jpg', './images/Londres.jpg', './images/LosAngeles.jpg', './images/Mallorca.jpg', './images/WindermereIsland.jpg'];
-
-        var centers = ['center','center', 'center', 'center', '55% 30%', 'center 35%', 'center 60%','center 35%'];
-        
-        var text = ['<span></span>','<span class="arroba">@</span><span class="city">Aspen</span>','<span class="arroba">@</span><span class="city">Buenos Aires</span>' ,'<span class="arroba">@</span><span class="city">Caesarea</span>','<span class="arroba">@</span><span class="city">London</span>','<span class="arroba">@</span><span class="city">Los Ángeles</span>','<span class="arroba">@</span><span class="city">Mallorca</span>','<span class="arroba">@</span><span class="city">Windermere Island</span>'];
-        var colors = ['transparent','white','white','black','black','black','white','white'];
-        var i = 0;
-          
-        $("#wrapper_bottom").css("opacity", 0);
-        changeImage('#wrapper_bottom', './images/cover.png','center', '', 'transparent');
-        changeBackground();
-          
-        function changeBackground() {
-          if (i == -1) {
-            setInterval(enterPage, 3000);
-            i == 300;
-          }
-          $('#border').animate({"opacity": 0}, 1000, function(){
-            $('.city').html('');
-            $('.arroba').html('');
-            
-            $('#border').css('border-color', 'transparent');
-            $('.enter-button').css('color', 'transparent');
-            $('#covertitle').css('color', 'transparent');
-          });
-          
-          $('#wrapper_bottom')
-            .animate({"opacity": 1}, 2000, function(){
-              $('#border').css('border-color', colors[i]);
-              $('.enter-button').css('color', colors[i]);
-              $('#covertitle').css('color', colors[i]);
-              $('#covertitle').html(text[i]);
-              $('#border').animate({"opacity": 1}, 500);
-              changeImage('#wrapper_top', images[i], centers[i], text[i], colors[i]);
-              
-              if (++i >= images.length) { i = -1 } 
-              $("#wrapper_bottom").css("opacity", 0);
-              changeImage('#wrapper_bottom', images[i], centers[i], text[i]);
-              
-          });
-        }
-        if(i > 250) {
-
-        }
-        setInterval(changeBackground, 5000);
-      });
-    </script>
 	</head>
 	<body style="height: 100%;">	
+    <div id="preloader">
+      <img src="./images/cover.png" />
+      <img src="./images/Aspen.jpg" />
+      <img src="./images/BuenosAires.jpg" />
+      <img src="./images/Caesarea.jpg" />
+      <img src="./images/Londres.jpg" />
+      <img src="./images/LosAngeles.jpg">
+      <img src="./images/Mallorca.jpg">
+      <img src="./images/WindermereIsland.jpg">
+    </div>
     <div id="wrapper_top" 
          style="height: 100%; position: relative; z-index: 0; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
       <div class="valign-wrapper" id="border">
@@ -706,6 +663,65 @@
 	  	</section>
 	  </section>
 	</body>
+  <script type="text/javascript">
+      var changeImage = function(id, image, center, text, color){
+        $(id).css('background-image', 'url('+image+')');
+        $(id).css('background-position', center);
+      };
+      var counter = 0,totalImages= $('#preloader').find('img').length;
+      $('#preloader').find('img').waitForImages(function() {
+        //fires for all images waiting for the last one.
+        if (++counter == totalImages) {
+          $('#preloader').hide();
+
+          var images = ['./images/cover.png','./images/Aspen.jpg', './images/BuenosAires.jpg', './images/Caesarea.jpg', './images/Londres.jpg', './images/LosAngeles.jpg', './images/Mallorca.jpg', './images/WindermereIsland.jpg'];
+
+          var centers = ['center','center', 'center', 'center', '55% 30%', 'center 35%', 'center 60%','center 35%'];
+          
+          var text = ['<span></span>','<span class="arroba">@</span><span class="city">Aspen</span>','<span class="arroba">@</span><span class="city">Buenos Aires</span>' ,'<span class="arroba">@</span><span class="city">Caesarea</span>','<span class="arroba">@</span><span class="city">London</span>','<span class="arroba">@</span><span class="city">Los Ángeles</span>','<span class="arroba">@</span><span class="city">Mallorca</span>','<span class="arroba">@</span><span class="city">Windermere Island</span>'];
+          var colors = ['transparent','white','white','black','black','black','white','white'];
+          var i = 0;
+            
+          $("#wrapper_bottom").css("opacity", 0);
+          changeImage('#wrapper_bottom', './images/cover.png','center', '', 'transparent');
+          changeBackground();
+            
+          function changeBackground() {
+            if (i == -1) {
+              setInterval(enterPage, 3000);
+              i == 300;
+            }
+            $('#border').animate({"opacity": 0}, 1000, function(){
+              $('.city').html('');
+              $('.arroba').html('');
+              
+              $('#border').css('border-color', 'transparent');
+              $('.enter-button').css('color', 'transparent');
+              $('#covertitle').css('color', 'transparent');
+            });
+            
+            $('#wrapper_bottom')
+              .animate({"opacity": 1}, 2000, function(){
+                $('#border').css('border-color', colors[i]);
+                $('.enter-button').css('color', colors[i]);
+                $('#covertitle').css('color', colors[i]);
+                $('#covertitle').html(text[i]);
+                $('#border').animate({"opacity": 1}, 500);
+                changeImage('#wrapper_top', images[i], centers[i], text[i], colors[i]);
+                
+                if (++i >= images.length) { i = -1 } 
+                $("#wrapper_bottom").css("opacity", 0);
+                changeImage('#wrapper_bottom', images[i], centers[i], text[i]);
+                
+            });
+          }
+          if(i > 250) {
+
+          }
+          setInterval(changeBackground, 5000);
+        }
+      });
+    </script>
 	<script>
 		function enterPage() {
       $('#wrapper_top').animate({"opacity": 0}, 1000, function(){
