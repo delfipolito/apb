@@ -20,45 +20,54 @@
       var changeImage = function(id, image, center, text, color){
         $(id).css('background-image', 'url('+image+')');
         $(id).css('background-position', center);
-        $('#border').css('border-color', color);
-        $('.enter-button').css('color', color);
-        $('#covertitle').css('color', color);
       };
 
       $(window).load(function() {
 
-        var images = ['./images/Aspen.jpg', './images/BuenosAires.jpg', './images/Caesarea.jpg', './images/Londres.jpg', './images/LosAngeles.jpg', './images/Mallorca.jpg', './images/WindermereIsland.jpg'];
+        var images = ['./images/cover.png','./images/Aspen.jpg', './images/BuenosAires.jpg', './images/Caesarea.jpg', './images/Londres.jpg', './images/LosAngeles.jpg', './images/Mallorca.jpg', './images/WindermereIsland.jpg'];
 
-        var centers = ['center', 'center', 'center', 'center 30%', 'center', 'center 60%','center 35%'];
+        var centers = ['center','center', 'center', 'center', '55% 30%', 'center 35%', 'center 60%','center 35%'];
         
-        var text = ['<span class="arroba">@</span><span class="city">Aspen</span>','<span class="arroba">@</span><span class="city">Buenos Aires</span>' ,'<span class="arroba">@</span><span class="city">Caesarea</span>','<span class="arroba">@</span><span class="city">London</span>','<span class="arroba">@</span><span class="city">Los Ángeles</span>','<span class="arroba">@</span><span class="city">Mallorca</span>','<span class="arroba">@</span><span class="city">Windermere Island</span>'];
-        var colors = ['white','white','black','black','black','white','white'];
+        var text = ['<span></span>','<span class="arroba">@</span><span class="city">Aspen</span>','<span class="arroba">@</span><span class="city">Buenos Aires</span>' ,'<span class="arroba">@</span><span class="city">Caesarea</span>','<span class="arroba">@</span><span class="city">London</span>','<span class="arroba">@</span><span class="city">Los Ángeles</span>','<span class="arroba">@</span><span class="city">Mallorca</span>','<span class="arroba">@</span><span class="city">Windermere Island</span>'];
+        var colors = ['transparent','white','white','black','black','black','white','white'];
         var i = 0;
           
         $("#wrapper_bottom").css("opacity", 0);
-        changeImage('#wrapper_bottom', './images/cover.png', 'center', '', 'transparent');
+        changeImage('#wrapper_bottom', './images/cover.png','center', '', 'transparent');
         changeBackground();
           
         function changeBackground() {
           if (i == -1) {
-            enterPage();
+            setInterval(enterPage, 3000);
+            i == 300;
           }
-          $('.city').html('');
-          $('.arroba').html('');
-          $('#border').css('border-color', 'transparent');
-          $('.enter-button').css('color', 'transparent');
-          $('#covertitle').css('color', 'transparent');
+          $('#border').animate({"opacity": 0}, 1000, function(){
+            $('.city').html('');
+            $('.arroba').html('');
+            
+            $('#border').css('border-color', 'transparent');
+            $('.enter-button').css('color', 'transparent');
+            $('#covertitle').css('color', 'transparent');
+          });
+          
           $('#wrapper_bottom')
             .animate({"opacity": 1}, 2000, function(){
-              changeImage('#wrapper_top', images[i], centers[i], text[i], colors[i]);
+              $('#border').css('border-color', colors[i]);
+              $('.enter-button').css('color', colors[i]);
+              $('#covertitle').css('color', colors[i]);
               $('#covertitle').html(text[i]);
+              $('#border').animate({"opacity": 1}, 500);
+              changeImage('#wrapper_top', images[i], centers[i], text[i], colors[i]);
+              
               if (++i >= images.length) { i = -1 } 
               $("#wrapper_bottom").css("opacity", 0);
               changeImage('#wrapper_bottom', images[i], centers[i], text[i]);
               
           });
         }
-      
+        if(i > 250) {
+
+        }
         setInterval(changeBackground, 5000);
       });
     </script>
@@ -699,10 +708,11 @@
 	</body>
 	<script>
 		function enterPage() {
-  	  $('#wrapper_top').addClass("hidden");
-
-  	  $('#page').removeClass("hidden");
-      
+      $('#wrapper_top').animate({"opacity": 0}, 1000, function(){
+        $('#wrapper_top').addClass("hidden");
+        $('#page').removeClass("hidden");
+        $('#page').animate({"opacity": 1}, 1000);
+      });
       google.maps.event.trigger(map, 'resize');
 	 	}
 

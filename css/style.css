@@ -250,6 +250,9 @@ section{
   letter-spacing: 2px;
   outline: none;
 }
+#page {
+  opacity: 0;
+}
 /*WHO*/
 #who {
   background-color: #f9f9f9;
