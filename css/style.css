@@ -1310,39 +1310,57 @@ area {
 
 .la-mobile {
   top: 136px;
-  left: 32px;
+  left: -14px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .aspen-mobile {
   top: 120px;
-  left: 57px;
+  left: 11px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .bahamas-mobile {
   top: 162px;
-  left: 109px;
+  left: 63px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .sfernando-mobile {
   top: 279px;
-  left: 173px;
+  left: 127px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .ba-mobile {
   top: 295px;
-  left: 180px;
+  left: 134px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .london-mobile {
   top: 93px;
-  left: 280px;
+  left: 234px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .mallorca-mobile {
   top: 127px;
-  left: 286px;
+  left: 240px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .furniture-mobile {
   top: 120px;
-  left: 306px;
+  left: 260px;
+  /*color:yellow;
+  background-color: green;*/
 }
 .caesarea-mobile {
   top: 137px;
-  left: 359px;
+  left: 313px;
+  /*color:yellow;
+  background-color: green;*/
 }
 
 /*PRELOADER*/
@@ -1355,3 +1373,10 @@ area {
   width:1px;
   height:1px;
 }
+#scroll-map {
+  overflow-x: visible;  
+  -webkit-overflow-scrolling: touch
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+

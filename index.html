@@ -283,8 +283,8 @@
           <p class="top-text">OUR WORK</p>
           <span class="line"></span>
           <p class="title">PROJECTS</p>
-          <div class="only-mobile relative" style="overflow-x: scroll;  -webkit-overflow-scrolling: touch">
-            <img draggable="false" class="map-image relative" src="./images/map.png">
+          <div id="scroll-map" class="only-mobile relative">
+            <img draggable="false" class="map-image relative" src="./images/map.png" style="margin-left: -46px;">
               <span id="mobile-la" class="mobile-button la-mobile"></span>
               <span id="mobile-bahamas" class="mobile-button bahamas-mobile"></span>
               <span id="mobile-aspen" class="mobile-button aspen-mobile"></span>
@@ -892,12 +892,6 @@
         });
         google.maps.event.addListener(marker1, 'click', function() {
           infowindow1.open(map,marker1);
-        });
-        var infowindow2 = new google.maps.InfoWindow({
-          content: ('<div>Teatro Colon</div>')
-        });
-        google.maps.event.addListener(marker2, 'click', function() {
-          infowindow2.open(map,marker2);
         });
         var marker3 = new google.maps.Marker({
           position: {lat: -34.603691, lng: -58.381558},
