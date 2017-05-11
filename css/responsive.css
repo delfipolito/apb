@@ -25,6 +25,7 @@
     margin-bottom: 40px;
     font-size: 20px;
   }
+  #covertitle {margin-top: -120px;}
   .contact-p {margin-top: -2px;}
   #covertitle {
     font-size: 25px;
@@ -123,7 +124,7 @@
   .aspen2-margin {margin-left: 0px;}
   .aspen2-title {
     right: 0%;
-    width: 52%;
+    width: 50%;
   }
   .aspen2-img-1 {width: 46%;}
   .aspen2-img-2 {
@@ -147,7 +148,7 @@
     height: 500px;
   }
   #belAir p.location {font-size: 12px!important;}
-  .belair-work-title {width: 50%;}
+  .belair-work-title {width: 45%;}
   .belair-img-1 {width: 48%;}
   .belair-item {
     top: 132px;
