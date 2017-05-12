@@ -17,6 +17,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js" ></script>
     <meta http-equiv="imagetoolbar" content="no" /> <!-- No save icons -->
+    <link rel="shortcut icon" href="favicon.ico"/>
 
 	</head>
 	<body style="height: 100%;">	
@@ -192,7 +193,7 @@
           <span class="line"></span>
           <p class="title">STUDIO</p>
         </div>
-        <img draggable="false" class="about-header-mobile" src="./images/studio-trucha.png"></img>
+        <img draggable="false" class="about-header-mobile" src="./images/studio.jpg"></img>
       </section>
       <section class="studio-mobile about-mobile only-mobile">
         <div style="padding-bottom: 60px; padding-top: 5px;">
@@ -204,7 +205,7 @@
         <div class="container">
           <div class="row about-large">
             <div class="col-lg-6 col-md-6">
-              <img draggable="false" class="studio-img" src="./images/studio-trucha.png"></img>
+              <img draggable="false" class="studio-img" src="./images/studio.jpg"></img>
             </div>
             <div class="col-lg-6 col-md-6 about-text-container">
               <p class="top-text">THE TEAM</p>
@@ -222,8 +223,8 @@
             <p class="name margin-bottom">PATRICIO BRIANO</P>
             <p class="profession">LEADING ARCHITECT</p>
           </div>
-          <img draggable="false" class="patricio-photo" src="./images/patricio-trucha.png">
-          <img draggable="false" class="natalia-photo" src="./images/natalia-trucha.png">
+          <img draggable="false" class="patricio-photo" src="./images/patricio.jpg">
+          <img draggable="false" class="natalia-photo" src="./images/natalia.jpg">
           <div class="natalia-text">
             <p class="name">NATALIA</P>
             <p class="name margin-bottom">VILLANOVA MITRE</P>
@@ -231,12 +232,12 @@
             <p class="profession profession-margin">M.A. INTERIOR ARCHITECTURE</p>
           </div>
           <div class="mariana-text">
-            <p class="name margin-bottom" style="margin-right: -200px;">MARIANA ALERCIA</P>
+            <p class="name margin-bottom" style="margin-right: -121px;">MARIANA ALERCIA</P>
             <p class="profession mariana-margin">ARCHITECT</p>
             <p class="profession mariana-margin">SPECIALIST IN CONSERVATION & RESTORATION OF CULTURAL HERITAGE</p>
           </div>
-          <img draggable="false" class="mariana-photo" src="./images/mariana-trucha.png">
-          <img draggable="false" class="sofia-photo" src="./images/sofia-trucha.png">
+          <img draggable="false" class="mariana-photo" src="./images/mariana.jpg">
+          <img draggable="false" class="sofia-photo" src="./images/sofia.jpg">
           <div class="sofia-text">
             <p class="name margin-bottom">SOFIA BLACKER</P>
             <p class="profession" style="margin-left: 89px;">ARCHITECT</p>
@@ -692,21 +693,22 @@
               i == 300;
             }
             $('#border').animate({"opacity": 0}, 1000, function(){
-              $('.city').html('');
-              $('.arroba').html('');
-              
-              $('#border').css('border-color', 'transparent');
-              $('.enter-button').css('color', 'transparent');
-              $('#covertitle').css('color', 'transparent');
+              $('#border').css('border-color', colors[i]);
+              $('.enter-button').css('color', colors[i]);
+              $('#covertitle').css('color', colors[i]);
+              $('#covertitle').html(text[i]);
+              $('#border').animate({"opacity": 1}, 1000);
             });
+
+
             
             $('#wrapper_bottom')
               .animate({"opacity": 1}, 2000, function(){
-                $('#border').css('border-color', colors[i]);
-                $('.enter-button').css('color', colors[i]);
-                $('#covertitle').css('color', colors[i]);
-                $('#covertitle').html(text[i]);
-                $('#border').animate({"opacity": 1}, 500);
+                // $('#border').css('border-color', colors[i]);
+                // $('.enter-button').css('color', colors[i]);
+                // $('#covertitle').css('color', colors[i]);
+                // $('#covertitle').html(text[i]);
+                // $('#border').animate({"opacity": 1}, 500);
                 changeImage('#wrapper_top', images[i], centers[i], text[i], colors[i]);
                 
                 if (++i >= images.length) { i = -1 } 

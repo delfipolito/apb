@@ -238,7 +238,7 @@ section{
 .enter-button {
   position: absolute;
   bottom: 0;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   border: solid 0px transparent;
   background: transparent;
   color: transparent;
