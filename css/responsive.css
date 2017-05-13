@@ -264,6 +264,26 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
+  .mallorca-img-2 {
+    width: 52%;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+  }
+  .aspen1-quote {
+    top: 698px;
+  }
+  #aspen2 {
+    height: 787px;
+  }
+  .aspen2-quote {
+    top: 639px;
+    margin: 0 5%;
+  }
+  #buenosAires {
+    height: 830px;
+    background-color: white;
+  }
   .belair-item {top: 257px;}
   .quote-title {
     width: 90%;

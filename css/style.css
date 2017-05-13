@@ -512,6 +512,85 @@ area {
   top: 1351px;
   left: calc(50% - 301px);
 }
+
+/*PEOPLE*/
+#people-mobile {
+  height: 1898px;
+  background-color: #f9f9f9;
+}
+.people-container {
+  max-width: 550px;
+}
+.name-m {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'titulos';
+  letter-spacing: 4px;
+  line-height: 36px;
+}
+.profession-m {
+  margin: 0px;
+  font-family: 'firaLight';
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #464545;
+}
+.profession-margin-m {
+  margin-left: 30px;
+}
+.patricio-text-m {
+  top: 348px;
+  z-index: 4;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.patricio-photo-m {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 236px;
+}
+.natalia-text-m {
+  position: absolute;
+  top: 780px;
+  left: 0;
+  text-align: left;
+}
+.natalia-photo-m {
+  position: absolute;
+  top: 456px;
+  left: 0;
+  width: 236px;
+}
+.mariana-text-m {
+  position: absolute;
+  top: 1247px;
+  z-index: 5;
+  right: 0;
+  text-align: right;
+}
+.mariana-photo-m {
+  position: absolute;
+  top: 912px;
+  right: 0;
+  width: 236px;
+}
+.sofia-text-m {
+  position: absolute;
+  top: 1681px;
+  left: 0;
+  text-align: left;
+}
+.sofia-photo-m {
+  position: absolute;
+  top: 1384px;
+  left: 0;
+  width: 236px;
+
+}
 /*WORK*/
 .work-sections {
   height: 1000px;
@@ -1374,6 +1453,7 @@ area {
   height:1px;
 }
 #scroll-map {
+  text-align: center;
   overflow-x: visible;  
   -webkit-overflow-scrolling: touch
   overflow-y: hidden;
