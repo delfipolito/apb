@@ -22,7 +22,7 @@
 	</head>
 	<body style="height: 100%;">	
     <div id="preloader">
-      <img src="./images/cover.png" />
+      <img src="./images/Cover2.png" />
       <img src="./images/Aspen.jpg" />
       <img src="./images/BuenosAires.jpg" />
       <img src="./images/Caesarea.jpg" />
@@ -191,7 +191,7 @@
         <div class="about-header-text">
           <p class="top-text">THE TEAM</p>
           <span class="line"></span>
-          <p class="title">STUDIO..</p>
+          <p class="title">STUDIO</p>
         </div>
         <img draggable="false" class="about-header-mobile" src="./images/studio.jpg"></img>
       </section>
@@ -703,7 +703,7 @@
         if (++counter == totalImages) {
           $('#preloader').hide();
 
-          var images = ['./images/cover.png','./images/Aspen.jpg', './images/BuenosAires.jpg', './images/Caesarea.jpg', './images/Londres.jpg', './images/LosAngeles.jpg', './images/Mallorca.jpg', './images/WindermereIsland.jpg'];
+          var images = ['./images/Cover2.png','./images/Aspen.jpg', './images/BuenosAires.jpg', './images/Caesarea.jpg', './images/Londres.jpg', './images/LosAngeles.jpg', './images/Mallorca.jpg', './images/WindermereIsland.jpg'];
 
           var centers = ['center','center', 'center', 'center', '55% 30%', 'center 35%', 'center 60%','center 35%'];
           
@@ -712,21 +712,22 @@
           var i = 0;
             
           $("#wrapper_bottom").css("opacity", 0);
-          changeImage('#wrapper_bottom', './images/cover.png','center', '', 'transparent');
+          changeImage('#wrapper_bottom', './images/Cover2.png','center', '', 'transparent');
           changeBackground();
             
           function changeBackground() {
             if (i == -1) {
               setInterval(enterPage, 3000);
               i == 300;
+            } else {
+              $('#border').animate({"opacity": 0}, 1000, function(){
+                $('#border').css('border-color', colors[i]);
+                $('.enter-button').css('color', colors[i]);
+                $('#covertitle').css('color', colors[i]);
+                $('#covertitle').html(text[i]);
+                $('#border').animate({"opacity": 1}, 1000);
+              });
             }
-            $('#border').animate({"opacity": 0}, 1000, function(){
-              $('#border').css('border-color', colors[i]);
-              $('.enter-button').css('color', colors[i]);
-              $('#covertitle').css('color', colors[i]);
-              $('#covertitle').html(text[i]);
-              $('#border').animate({"opacity": 1}, 1000);
-            });
 
 
             
