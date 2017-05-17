@@ -8,13 +8,19 @@
     padding: 0 48px!important;
   }
 }
+@media (min-width: 768px) {
+  .navbar-brand>img {
+    margin: auto;
+    margin-top: 8px;
+  }
+}
 @media (min-width: 350px) and (max-width: 767px) { /*Para iphone 6*/
-  .mallorca-img-2 {top: 1px;}
+  .mallorca-item {top: 1px;}
   .work-title {font-size: 22px;}
   #beberlyHills {height: 500px;}
 }
 @media (max-width: 350px) { /*Para iphone 5*/
-  .mallorca-img-2 {top: 18px;}
+  .mallorca-item {top: 18px;}
   .work-title {font-size: 26px;}
   #beberlyHills {height: 450px;}
 }
@@ -81,7 +87,7 @@
     padding-top: 30px;
   }
   .mallorca-img-1 {top: 124px;}
-  .mallorca-img-2 {
+  .mallorca-item {
     width: 50%;
     position: absolute;
     right: 0px;
@@ -114,7 +120,7 @@
   }
   #aspenCondo {height: 375px;}
   .aspen-condo-img-2 {top: 119px;}
-  .bhills-img-2 {top: 110px;}
+  .beberly-item {top: 110px;}
   .bhills-img-1 {top: 161px;}
   .bhills-work-title {
     width: 100%;
@@ -141,7 +147,7 @@
     margin: auto;
     left: inherit;
   }
-  .bsas-img-2 {top: 120px;}
+  .baires-item {top: 120px;}
   .bsas-img-1 {top: 174px;}
   .bsas-margin {margin-left: 0px;}
   #belAir {
@@ -264,7 +270,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
-  .mallorca-img-2 {
+  .mallorca-item {
     width: 52%;
     position: absolute;
     top: 1px;
@@ -321,7 +327,7 @@
   #aspenCondo {height: 675px;}
   .aspen-condo-img-2 {top: 235px;}
   #beberlyHills {height: 865px;}
-  .bhills-img-2 {top: 148px;}
+  .beberly-item {top: 148px;}
   .bhills-img-1 {top: 257px;}
   .bhills-work-title {
     width: 100%;
@@ -407,7 +413,7 @@
 		display: inherit;
 	}
   .work-sections {height: 900px;}
-  .mallorca-img-2 {
+  .mallorca-item {
     width: 50%;
     position: absolute;
     top: 1px;
