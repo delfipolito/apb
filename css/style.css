@@ -130,9 +130,11 @@ section{
   margin-left: 10px;
   margin-top: -35px;
 }
-.navbar-brand>img {
-  height: 82px;
-  width: auto;
+.navbar-brand {
+  margin-top: 10px!important;
+}
+.mobile-brand {
+
 }
 .navbar {
   position: relative;
@@ -257,6 +259,26 @@ section{
 #page {
   opacity: 0;
 }
+.navbar-mobile {
+  height: 50px;
+  width: 93px;
+  margin: auto;
+  background-image: url(../images/navmobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: conta;
+  -o-background-size: contain;
+  background-size: contain;
+  transform: scale(1.3);
+}
+.navbar-a-mobile {
+  margin: auto;
+  height: 50px;
+  width: 93px;
+  position: absolute;
+  left: calc(50% - 46.5px);
+}
 /*WHO*/
 #who {
   background-color: #f9f9f9;
@@ -335,7 +357,7 @@ area {
   margin-left: calc(40% - 430px);
   text-align: center;
   position: absolute;
-  background-image: url('../images/contact.jpg');
+  background-image: url('../images/contact.png');
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;

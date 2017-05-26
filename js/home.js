@@ -5,66 +5,66 @@ $( document ).ready(function(){
 	
 	$(window).scroll(function() {
 		var mallorca = $('.mallorca-item').offset().top;
-	  if ($(window).scrollTop() >= (mallorca - 120) && $(window).scrollTop() <= (mallorca + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (mallorca - 200) && $(window).scrollTop() <= (mallorca + 400)){
 	  	$('#animate10').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  mallorca + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  mallorca + 600){
 	  	$('#animate10').removeClass('item-hovered');
 	  }
 
     var caesarea = $('.caesarea-item').offset().top;
-	  if ($(window).scrollTop() >= (caesarea - 120) && $(window).scrollTop() <= (caesarea + 400)){	
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (caesarea - 200) && $(window).scrollTop() <= (caesarea + 400)){	
 	  	$('#animate1').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  caesarea + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  caesarea + 600){
 	  	$('#animate1').removeClass('item-hovered');
 	  }
 
 	  var aspen1 = $('.aspen1-img-2').offset().top;
-	  if ($(window).scrollTop() >= (aspen1 - 120) && $(window).scrollTop() <= (aspen1 + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (aspen1 - 200) && $(window).scrollTop() <= (aspen1 + 400)){
 	  	$('#animate2').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  aspen1 + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  aspen1 + 600){
 	  	$('#animate2').removeClass('item-hovered');
 	  }
 
 	  var belair = $('.belair-item').offset().top;
-	  if ($(window).scrollTop() >= (belair - 120) && $(window).scrollTop() <= (belair + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (belair - 400) && $(window).scrollTop() <= (belair + 400)){
 	  	$('#animate3').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  belair + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  belair + 600){
 	  	$('#animate3').removeClass('item-hovered');
 	  }
 	  
 	  var aspen2 = $('.aspen2-img-1').offset().top;
-	  if ($(window).scrollTop() >= (aspen2 - 120) && $(window).scrollTop() <= (aspen2 + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (aspen2 - 200) && $(window).scrollTop() <= (aspen2 + 400)){
 	  	$('#animate4').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  aspen2 + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  aspen2 + 600){
 	  	$('#animate4').removeClass('item-hovered');
 	  }
 
 	  var condo = $('.condo-item').offset().top;
-	  if ($(window).scrollTop() >= (condo - 120) && $(window).scrollTop() <= (condo + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (condo - 200) && $(window).scrollTop() <= (condo + 400)){
 	  	$('#animate5').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  condo + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  condo + 600){
 	  	$('#animate5').removeClass('item-hovered');
 	  }
 
 	  var beberly = $('.beberly-item').offset().top;
-	  if ($(window).scrollTop() >= (beberly - 120) && $(window).scrollTop() <= (beberly + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (beberly - 200) && $(window).scrollTop() <= (beberly + 400)){
 	  	$('#animate6').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  beberly + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  beberly + 600){
 	  	$('#animate6').removeClass('item-hovered');
 	  }
 
 	  var baires = $('.baires-item').offset().top;
-	  if ($(window).scrollTop() >= (baires - 120) && $(window).scrollTop() <= (baires + 400)){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >= (baires - 200) && $(window).scrollTop() <= (baires + 400)){
 	  	$('#animate7').addClass('item-hovered');
 	  } 
-	  if ($(window).scrollTop() >=  baires + 600){
+	  if (!$('#page').hasClass('hidden') && $(window).scrollTop() >=  baires + 600){
 	  	$('#animate7').removeClass('item-hovered');
 	  }
 	});

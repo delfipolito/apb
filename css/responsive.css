@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
   .navbar-brand>img {
     margin: auto;
-    margin-top: 8px;
+    margin-top: 7px;
   }
 }
 @media (min-width: 350px) and (max-width: 767px) { /*Para iphone 6*/
@@ -258,7 +258,7 @@
 	.title {font-size: 40px;}
 	.about-text{padding: 0 20px;}
 	.only-mobile {display: inherit;}
-	.only-large {display: none;}
+	.only-large {display: none!important;}
 	.map-image {
   	width: auto;
   	height: 400px;
