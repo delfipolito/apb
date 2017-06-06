@@ -1,4 +1,9 @@
 $( document ).ready(function(){
+
+	$(window).load(function(){
+		console.log("ahora si completamente cargada");
+	});
+
 	$("body").on("contextmenu", "img", function(e) {
 	  return false;
 	});

@@ -74,6 +74,7 @@ section{
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin:auto;
   height: 100%!important;
 }
 .valign-wrapper .valign {
@@ -91,6 +92,7 @@ section{
 #covertitle{
   font-size: 3.5vw;
   letter-spacing: 10px;
+  margin: auto;
 }
 
 .arroba {

@@ -726,7 +726,7 @@
             
           function changeBackground() {
             if (i == -1) {
-              setInterval(enterPage, 3000);
+              enterPage();
               i == 300;
             } else {
               $('#border').animate({"opacity": 0}, 1000, function(){
@@ -738,15 +738,8 @@
               });
             }
 
-
-            
             $('#wrapper_bottom')
               .animate({"opacity": 1}, 2000, function(){
-                // $('#border').css('border-color', colors[i]);
-                // $('.enter-button').css('color', colors[i]);
-                // $('#covertitle').css('color', colors[i]);
-                // $('#covertitle').html(text[i]);
-                // $('#border').animate({"opacity": 1}, 500);
                 changeImage('#wrapper_top', images[i], centers[i], text[i], colors[i]);
                 
                 if (++i >= images.length) { i = -1 } 
@@ -764,11 +757,14 @@
     </script>
 	<script>
 		function enterPage() {
-      $('#wrapper_top').animate({"opacity": 0}, 1000, function(){
-        $('#wrapper_top').addClass("hidden");
+      $('#wrapper_top').animate({"opacity": 0.5}, 1000, function(){
         $('#page').removeClass("hidden");
         $('#page').animate({"opacity": 1}, 1000);
+        $('#wrapper_top').animate({"opacity": 0}, 1000);
+        $('#wrapper_top').addClass("hidden");
       });
+
+      
       google.maps.event.trigger(map, 'resize');
 	 	}
 
