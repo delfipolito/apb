@@ -1,7 +1,8 @@
 $( document ).ready(function(){
 
 	$(window).load(function(){
-		console.log("ahora si completamente cargada");
+
+		console.log("ahora si completamente cargada", $(window).getLoaded());
 	});
 
 	$("body").on("contextmenu", "img", function(e) {
