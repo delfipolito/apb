@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Movile first -->
 		<meta http-equiv="imagetoolbar" content="no" /> <!-- No save icons -->
     <script src="js/jquery.min.js"></script><!--JQuery 1.11.2 local -->
-		<script type="text/javascript" src="js/pace.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
 
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -39,7 +38,10 @@
     <div id="wrapper_top" 
          style="height: 100%; position: relative; z-index: 0; background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
       <div class="valign-wrapper" id="border">
-                <p class="valign" id="covertitle"><p>
+        <p class="valign" id="covertitle"><p>
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
         <button class="enter-button" onclick="enterPage()">ENTER</button>
       </div>
       
@@ -754,7 +756,12 @@
           if(i > 250) {
 
           }
-          setInterval(changeBackground, 5000);
+
+          $(window).load(function(){
+            $('.progress').addClass("hidden");
+            setInterval(changeBackground, 5000);
+          });
+          
         }
       });
     </script>
