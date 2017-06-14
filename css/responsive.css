@@ -31,7 +31,7 @@
     margin-bottom: 20px;
     font-size: 20px;
   }
-  #covertitle {margin-top: -120px;}
+  #covertitle {margin: 0px; margin-top: -120px;}
   .contact-p {margin-top: -2px;}
   #covertitle {
     font-size: 25px;
@@ -83,8 +83,7 @@
   }
   #mallorca {
     height: 700px;
-    margin-top: 100px!important;
-    padding-top: 30px;
+    padding-top: 130px!important;
   }
   .mallorca-img-1 {top: 124px;}
   .mallorca-item {
@@ -236,6 +235,23 @@
 	.contact-p {
     margin-bottom: 10px;
 	}
+
+  #about-section {
+    top: -155px;
+    position: relative;
+  }
+  #studio-section {
+    top: -110px;
+    position: relative;
+  }
+  #contact-section{
+    top: -60px;
+    position: relative;
+  }
+  #projects-section {
+    top: -85px;
+    position: relative;
+  }
 }
 
 @media (max-width: 991px) { /*Para monitores sm y xs*/
@@ -400,6 +416,23 @@
     margin-left: 10px;
 	}
 
+  #about-section {
+    top: -155px;
+    position: relative;
+  }
+  #studio-section {
+    top: -110px;
+    position: relative;
+  }
+  #contact-section{
+    top: 0px;
+    position: relative;
+  }
+  #projects-section {
+    top: -85px;
+    position: relative;
+  }
+
 }
 @media (min-width: 992px) and (max-width: 1200px){ /*Para monitores md*/
 	.container {
@@ -424,9 +457,37 @@
   .bhills-work-title {left: 100px;}
   .aspen2-title {right: 2%;}
   .bsas-title {left: 45px;}
+
+  #about-section, #studio-section, #contact-section{
+    top: -248px;
+    position: relative;
+  }
+  #projects-section {
+    top: -85px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px){ /*Para monitores de resolucion muy grande*/
+  #about-section, #studio-section, #contact-section{
+    top: -228px;
+    position: relative;
+  }
+  #projects-section {
+    top: -85px;
+    position: relative;
+  }
 }
 
 @media (min-width: 1600px){ /*Para monitores de resolucion muy grande*/
+  #about-section, #studio-section, #contact-section {
+    top: -228px;
+    position: relative;
+  }
+  #projects-section {
+    top: -85px;
+    position: relative;
+  }
 
 }
 
@@ -441,4 +502,8 @@
 
 @media screen and (max-width: 991px) and (orientation:landscape){
 
+}
+
+#about-section, #projects-section, #studio-section, #contact-section{
+  color: transparent;
 }

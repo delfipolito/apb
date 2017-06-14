@@ -352,11 +352,17 @@ $( document ).ready(function(){
 	  });
 	  $("#close-modal-aspen-1").click( function() {
 	  	$('.mobile-modal-aspen-1').addClass('hidden');
+	  	$('.mobile-modal-aspen-2').addClass('hidden');
+	  	$('.mobile-modal-aspen-3').addClass('hidden');
 	  });
 	  $("#close-modal-aspen-2").click( function() {
+	  	$('.mobile-modal-aspen-1').addClass('hidden');
 	  	$('.mobile-modal-aspen-2').addClass('hidden');
+	  	$('.mobile-modal-aspen-3').addClass('hidden');
 	  });
 	  $("#close-modal-aspen-3").click( function() {
+	  	$('.mobile-modal-aspen-1').addClass('hidden');
+	  	$('.mobile-modal-aspen-2').addClass('hidden');
 	  	$('.mobile-modal-aspen-3').addClass('hidden');
 	  });
 

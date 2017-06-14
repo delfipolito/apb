@@ -6,14 +6,14 @@
   margin-right: 20%!important;
   position: relative;
   display: block;
-  background-color: #acece6;
+  background-color: rgba(0, 0, 0, 0.18);
   border-radius: 2px;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
 }
 
 .progress .indeterminate {
-  background-color: #26a69a;
+  background-color: black;
 }
 
 .progress .indeterminate:before {
@@ -200,10 +200,10 @@ section{
 }
 
 .arroba {
-  font-family: 'arroba';
+  font-family: 'Open Sans','arroba','ciudad', sans-serif;
 }
 .city {
-  font-family: 'ciudad';
+  font-family: 'Raleway','ciudad', sans-serif;
   text-transform: uppercase;
 }
 
@@ -358,7 +358,7 @@ section{
   width: 100px;
   align-self: center;
   right: calc(50% - 50px);
-  font-family: 'enter';
+  font-family: 'Fira Sans Condensed', 'enter', sans-serif;
   letter-spacing: 2px;
   outline: none;
 }
@@ -396,6 +396,9 @@ section{
 /*ABOUT*/
 #about {
   margin: -100px 0 40px 0;
+}
+#about-section {
+  margin-top: 200px!important;
 }
 .about-text-container {
   padding: 20px 30px;
@@ -1569,8 +1572,9 @@ area {
   background: transparent;
   border: transparent;
   float: right;
-  height: 73vw;
+  height: calc(73vw - 40px);
   margin-right: -20px;
+  margin-top: 40px;
 }
 .before {
   background: transparent;
