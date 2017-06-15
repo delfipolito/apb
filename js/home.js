@@ -1,8 +1,4 @@
 $( document ).ready(function(){
-
-	$("body").on("contextmenu", "img", function(e) {
-	  return false;
-	});
 	
 	$(window).scroll(function() {
 		var mallorca = $('.mallorca-item').offset().top;
@@ -220,6 +216,7 @@ $( document ).ready(function(){
        $('.late-content').removeClass('hidden');
     }, 800);
 	}
+	
 	function hideContent(className) {
 		$('.late-content').addClass('hidden');
 		setTimeout(function () {
